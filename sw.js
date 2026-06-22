@@ -1,11 +1,10 @@
-/* ============================================
-   CohusDex — Service Worker
-   Cache-first for static assets. Offline-ready.
-   ============================================ */
+/* ═══════════════════════════════════════════════════════════════════════════
+   CohusDex Service Worker v2.0
+   Offline-first caching for all pages and assets
+   ═══════════════════════════════════════════════════════════════════════════ */
 
-const CACHE_NAME = 'cohusdex-v1';
-
-const STATIC_ASSETS = [
+const CACHE_NAME = 'cohusdex-v2';
+const PRECACHE_URLS = [
   '/',
   '/index.html',
   '/faidaza.html',
@@ -14,74 +13,70 @@ const STATIC_ASSETS = [
   '/contact.html',
   '/css/style.css',
   '/js/main.js',
-  '/manifest.json'
+  '/manifest.json',
+  '/assets/icon-192.png',
+  '/assets/icon-512.png',
+  '/assets/favicon.png',
+  '/assets/icon.svg'
 ];
 
-// Install: cache all static assets
-self.addEventListener('install', function(event) {
+// Install: precache core assets
+self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(function(cache) {
-      return cache.addAll(STATIC_ASSETS);
-    }).catch(function() {
-      // Non-critical: proceed even if some assets fail to cache
-    })
+    caches.open(CACHE_NAME)
+      .then((cache) => cache.addAll(PRECACHE_URLS))
+      .then(() => self.skipWaiting())
   );
-  self.skipWaiting();
 });
 
 // Activate: clean old caches
-self.addEventListener('activate', function(event) {
+self.addEventListener('activate', (event) => {
   event.waitUntil(
-    caches.keys().then(function(keys) {
+    caches.keys().then((cacheNames) => {
       return Promise.all(
-        keys.filter(function(key) { return key !== CACHE_NAME; })
-            .map(function(key) { return caches.delete(key); })
+        cacheNames
+          .filter((name) => name !== CACHE_NAME)
+          .map((name) => caches.delete(name))
       );
-    })
+    }).then(() => self.clients.claim())
   );
-  self.clients.claim();
 });
 
-// Fetch: cache-first for static, network-first for API
-self.addEventListener('fetch', function(event) {
+// Fetch: cache-first for assets, network-first for pages
+self.addEventListener('fetch', (event) => {
+  const { request } = event;
+  const url = new URL(request.url);
+
   // Skip non-GET requests
-  if (event.request.method !== 'GET') return;
+  if (request.method !== 'GET') return;
 
-  // Skip external URLs and browser extensions
-  var url = new URL(event.request.url);
-  if (url.origin !== self.location.origin) return;
+  // Skip chrome-extension and other non-http(s) requests
+  if (!url.protocol.startsWith('http')) return;
 
-  // Cache-first strategy for navigation and static assets
+  // For HTML pages: network-first (so users get latest content)
+  if (request.mode === 'navigate' || request.headers.get('Accept')?.includes('text/html')) {
+    event.respondWith(
+      fetch(request)
+        .then((response) => {
+          const cloned = response.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(request, cloned));
+          return response;
+        })
+        .catch(() => caches.match(request))
+    );
+    return;
+  }
+
+  // For CSS, JS, images, fonts, manifest: cache-first
   event.respondWith(
-    caches.match(event.request).then(function(cached) {
-      if (cached) {
-        // Return cached version immediately, update cache in background
-        fetch(event.request).then(function(response) {
-          if (response && response.status === 200) {
-            var clone = response.clone();
-            caches.open(CACHE_NAME).then(function(cache) {
-              cache.put(event.request, clone);
-            });
-          }
-        }).catch(function() {});
-        return cached;
-      }
-      // Not in cache — fetch from network
-      return fetch(event.request).then(function(response) {
-        if (!response || response.status !== 200) return response;
-        var clone = response.clone();
-        caches.open(CACHE_NAME).then(function(cache) {
-          cache.put(event.request, clone);
+    caches.match(request)
+      .then((cached) => {
+        if (cached) return cached;
+        return fetch(request).then((response) => {
+          const cloned = response.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(request, cloned));
+          return response;
         });
-        return response;
-      }).catch(function() {
-        // Offline fallback for navigation requests
-        if (event.request.mode === 'navigate') {
-          return caches.match('/index.html');
-        }
-        // For other failures, just fail
-        return new Response('Offline', { status: 503 });
-      });
-    })
+      })
   );
 });

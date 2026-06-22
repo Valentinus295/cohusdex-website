@@ -1,193 +1,477 @@
 <!DOCTYPE html>
-<html lang="sw">
+<html lang="en" dir="ltr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="CohusDex — Economic Intelligence for Africa's Informal Economy. Faidaza: free voice-first AI CFO for informal workers. B2B intelligence for microfinance, FMCG, government, and insurance.">
-<meta name="theme-color" content="#E8722A">
-<link rel="icon" type="image/png" href="/assets/favicon.png">
-<link rel="apple-touch-icon" href="/assets/icon-192.png">
-<link rel="manifest" href="/manifest.json">
-<link rel="stylesheet" href="/css/style.css">
-<meta property="og:title" content="CohusDex — Economic Intelligence for Africa's Informal Economy">
-<meta property="og:description" content="Making Africa's Informal Economy Visible. Faidaza: free voice-first AI CFO for informal workers. B2B intelligence for MFIs, FMCGs, governments, and insurers.">
-<meta property="og:image" content="https://cohusdex.com/assets/og-image.png">
-<meta property="og:url" content="https://cohusdex.com/">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="CohusDex — Economic Intelligence for Africa's Informal Economy">
-<meta name="twitter:description" content="Making Africa's Informal Economy Visible. Faidaza: free voice-first AI CFO for informal workers.">
-<meta name="twitter:image" content="https://cohusdex.com/assets/og-image.png">
-<link rel="alternate" hreflang="sw" href="https://cohusdex.com/">
-<link rel="alternate" hreflang="en" href="https://cohusdex.com/">
-<link rel="canonical" href="https://cohusdex.com/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0A0A0A">
+  <meta name="description" content="CohusDex builds economic intelligence for Africa's 500 million informal workers. Faidaza — the voice-first CFO that tells a mama mboga her daily profit. Free. Offline. Kiswahili-first.">
+  <meta name="keywords" content="CohusDex, Faidaza, informal economy, Africa, financial inclusion, credit scoring, MFI, Kenya">
+  <meta name="author" content="CohusDex">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="CohusDex — Economic Intelligence for Africa's Informal Economy">
+  <meta property="og:description" content="500 million workers. Zero visibility. We're changing that. Voice-first CFO for every informal trader in Africa.">
+  <meta property="og:image" content="/assets/og-image.png">
+  <meta property="og:url" content="https://cohusdex.com">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CohusDex">
+  <meta property="og:locale" content="en_KE">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CohusDex — Economic Intelligence for Africa's Informal Economy">
+  <meta name="twitter:description" content="500 million workers. Zero visibility. We're changing that.">
+  <meta name="twitter:image" content="/assets/og-image.png">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CohusDex",
+    "url": "https://cohusdex.com",
+    "logo": "https://cohusdex.com/assets/icon-512.png",
+    "description": "Economic intelligence for Africa's informal economy.",
+    "foundingDate": "2025",
+    "founder": {
+      "@type": "Person",
+      "name": "Valentine Owuor"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Migori",
+      "addressCountry": "KE"
+    },
+    "sameAs": []
+  }
+  </script>
+
+  <title>CohusDex — Economic Intelligence for Africa's Informal Economy</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/icon.svg">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/icon-192.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="canonical" href="https://cohusdex.com">
 </head>
 <body>
+  <!-- Background Effects -->
+  <div class="bg-glow bg-glow--orange" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--green" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
 
-<!-- Navigation -->
-<nav class="nav" role="navigation" aria-label="Main navigation">
-  <div class="nav-inner">
-    <a href="/" class="nav-logo" aria-label="CohusDex Home">Cohus<span>Dex</span></a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" onclick="toggleNav()">☰</button>
-    <ul class="nav-links" role="menubar">
-      <li role="none"><a href="/" class="active" role="menuitem">Nyumbani</a></li>
-      <li role="none"><a href="/faidaza.html" role="menuitem">Faidaza</a></li>
-      <li role="none"><a href="/products.html" role="menuitem">Bidhaa</a></li>
-      <li role="none"><a href="/about.html" role="menuitem">Kuhusu</a></li>
-      <li role="none"><a href="/contact.html" role="menuitem">Wasiliana</a></li>
-      <li role="none"><a href="/faidaza.html#download" class="nav-cta" role="menuitem">Pata Faidaza</a></li>
-    </ul>
-  </div>
-</nav>
+  <!-- Navigation -->
+  <header class="nav" role="banner">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="CohusDex Home">
+        <span class="nav-logo-dot" aria-hidden="true"></span>
+        CohusDex
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="/products.html" class="nav-link">Products</a>
+        <a href="/faidaza.html" class="nav-link">Faidaza</a>
+        <a href="/about.html" class="nav-link">About</a>
+        <a href="/contact.html" class="nav-link">Contact</a>
+        <a href="/contact.html" class="nav-cta">Partner With Us</a>
+      </nav>
+    </div>
+  </header>
 
-<!-- Hero -->
-<section class="hero">
-  <div class="hero-badge">🚀 Tumezinduliwa Kenya</div>
-  <h1>Making Africa's Informal Economy Visible</h1>
-  <p>500 million informal workers. Zero CFOs. We're changing that.</p>
-  <div class="hero-ctas">
-    <a href="/faidaza.html#download" class="btn btn-primary btn-lg">📱 Pata Faidaza</a>
-    <a href="/products.html" class="btn btn-secondary btn-lg">🤝 Partner with Us</a>
-  </div>
-</section>
+  <main id="main-content">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-content">
+          <h1 id="hero-heading" class="heading-hero reveal">
+            Economic Intelligence for<br>
+            <span class="text-gradient">Africa's Informal Economy</span>
+          </h1>
+          <p class="text-body-lg reveal" style="margin-top: var(--space-xl); max-width: 560px;">
+            500 million workers. Zero visibility. We're changing that — starting with a voice that speaks Kiswahili and fits in a KES 3,000 phone.
+          </p>
+          <div class="hero-cta reveal">
+            <a href="/faidaza.html#download" class="btn btn--primary btn--large">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Pata Faidaza
+            </a>
+            <a href="/contact.html" class="btn btn--outline btn--large">
+              Partner With Us
+            </a>
+          </div>
+        </div>
 
-<!-- Mission -->
-<section class="section section-alt">
-  <div class="section-header">
-    <h2>Why CohusDex Exists</h2>
-    <p>Africa's informal economy powers the continent — yet it remains invisible to the systems that should serve it. We're building the bridge.</p>
-  </div>
-  <div class="grid grid-3">
-    <div class="card">
-      <div class="card-icon" style="background:#fde8d8;color:#E8722A">👩🏾‍🌾</div>
-      <h3>For Every Worker</h3>
-      <p>A mama mboga in Migori should know her daily profit as clearly as any CEO. Faidaza gives her that power — free, forever.</p>
-    </div>
-    <div class="card">
-      <div class="card-icon" style="background:#e8f5ee;color:#2D6A4F">📊</div>
-      <h3>For Every Institution</h3>
-      <p>MFIs, FMCGs, governments, and insurers finally get real data from the real economy — not surveys, not guesses.</p>
-    </div>
-    <div class="card">
-      <div class="card-icon" style="background:#fde8d8;color:#E8722A">🌍</div>
-      <h3>For Africa's Future</h3>
-      <p>When the informal economy is visible, policy works, credit flows, and markets grow. That's the Africa we're building.</p>
-    </div>
-  </div>
-</section>
+        <!-- Phone Mockup (CSS-only) -->
+        <div class="hero-visual reveal--fade reveal" style="animation: floatPhone 6s ease-in-out infinite;">
+          <div class="phone-mockup" style="box-shadow: var(--shadow-xl), var(--glow-orange);" aria-hidden="true">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="phone-app-header">
+                <div class="phone-app-icon">F</div>
+                <div class="phone-app-title">Faidaza</div>
+              </div>
+              <div class="phone-voice-bar">
+                <div class="phone-mic">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>
+                </div>
+                <div class="phone-waveform">
+                  <span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+              <div class="phone-transcript">
+                <div class="phone-transcript-label">Ulilosema</div>
+                <div class="phone-transcript-text">Nimenunua nyanya kilo 5 kwa 60, vitunguu kilo 2 kwa 80, mafuta sufuria moja 120...</div>
+              </div>
+              <div class="phone-result">
+                <div class="phone-result-label">Faida ya Leo</div>
+                <div class="phone-result-amount">KES 340</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        @keyframes floatPhone {
+          0%, 100% { transform: translateY(-50%) translateY(0px); }
+          50% { transform: translateY(-50%) translateY(-15px); }
+        }
+        @media (min-width: 1200px) {
+          .hero-visual { display: block !important; right: 5%; }
+        }
+      </style>
+    </section>
 
-<!-- Two Products -->
-<section class="section">
-  <div class="section-header">
-    <h2>Our Products</h2>
-    <p>One mission. Two paths. Both designed for Africa's reality.</p>
-  </div>
-  <div class="grid grid-2">
-    <!-- Faidaza -->
-    <div class="product-card primary">
-      <span class="product-tag b2c">Bure kwa Wafanyakazi</span>
-      <h3>🧮 Faidaza</h3>
-      <p><strong>CFO kwa kila mfanyakazi.</strong> Voice-first AI that helps informal workers track income, calculate profit, and make better money decisions. Works offline on a KES 3,000 phone. Speaks Kiswahili. Free forever.</p>
-      <a href="/faidaza.html" class="btn btn-primary btn-sm">Jifunze Zaidi →</a>
+    <!-- Stats Bar -->
+    <div class="stats-bar reveal--fade reveal" role="region" aria-label="Key statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div>
+            <div class="stat-number" data-count="500" data-suffix="M+">0M+</div>
+            <div class="stat-label">Informal workers<br>across Africa</div>
+          </div>
+          <div>
+            <div class="stat-number" data-count="0" data-prefix="KES ">KES 0</div>
+            <div class="stat-label">Cost for traders<br>Bure kabisa</div>
+          </div>
+          <div>
+            <div class="stat-number" data-count="100" data-suffix="%">0%</div>
+            <div class="stat-label">Works completely<br>offline</div>
+          </div>
+          <div>
+            <div class="stat-number">Kiswahili</div>
+            <div class="stat-label">Designed for Africa<br>20+ languages coming</div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- CohusDex Core -->
-    <div class="product-card secondary">
-      <span class="product-tag b2b">Kwa Biashara</span>
-      <h3>📈 CohusDex Core</h3>
-      <p><strong>Economic intelligence for institutions.</strong> Credit scoring for microfinance. Market intelligence for FMCGs. Economic mapping for governments. Risk data for insurers. Powered by real data from Africa's informal economy.</p>
-      <a href="/products.html" class="btn btn-green btn-sm">Explore Products →</a>
-    </div>
-  </div>
-</section>
 
-<!-- The Flywheel -->
-<section class="section section-alt">
-  <div class="section-header">
-    <h2>How It Works Together</h2>
-    <p>Faidaza serves workers. CohusDex Core serves institutions. Together, they create a flywheel that lifts everyone.</p>
-  </div>
-  <div class="steps">
-    <div class="step">
-      <div class="step-num">1</div>
-      <h4>Workers Use Faidaza</h4>
-      <p>Bure kabisa. Voice-first. Offline. They track sales, calculate profit, get advice.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">2</div>
-      <h4>Institutions Get Insights</h4>
-      <p>MFIs make better loans. FMCGs optimize distribution. Governments see the real economy.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">3</div>
-      <h4>Workers Benefit More</h4>
-      <p>Better credit access. Fairer prices. Visible economic participation. The flywheel spins.</p>
-    </div>
-  </div>
-</section>
+    <!-- Two Products Split -->
+    <section class="section" aria-labelledby="products-heading">
+      <div class="container">
+        <div class="section-label reveal">Our Products</div>
+        <h2 id="products-heading" class="heading-2 reveal mb-4">Two sides of the same mission.<br>One ecosystem.</h2>
 
-<!-- Stats / Traction -->
-<section class="section text-center">
-  <div class="section-header">
-    <h2>Built for Scale</h2>
-    <p>Starting in Kenya. Designed for Africa.</p>
-  </div>
-  <div class="grid grid-4">
-    <div class="card">
-      <div style="font-size:2rem;font-weight:800;color:var(--orange)">500M+</div>
-      <p style="font-size:.85rem;color:var(--gray);margin-top:4px">Informal workers in Africa</p>
-    </div>
-    <div class="card">
-      <div style="font-size:2rem;font-weight:800;color:var(--green)">KES 3,000</div>
-      <p style="font-size:.85rem;color:var(--gray);margin-top:4px">Phone that runs Faidaza</p>
-    </div>
-    <div class="card">
-      <div style="font-size:2rem;font-weight:800;color:var(--orange)">100%</div>
-      <p style="font-size:.85rem;color:var(--gray);margin-top:4px">Offline-capable</p>
-    </div>
-    <div class="card">
-      <div style="font-size:2rem;font-weight:800;color:var(--green)">Free</div>
-      <p style="font-size:.85rem;color:var(--gray);margin-top:4px">Faidaza for workers, forever</p>
-    </div>
-  </div>
-</section>
+        <div class="two-col">
+          <!-- Faidaza -->
+          <article class="card card--glass reveal" style="text-align: center;">
+            <div class="card-glow" aria-hidden="true"></div>
+            <span class="product-card-badge product-card-badge--orange">B2C · Free</span>
+            <div class="phone-mockup" style="width: 200px; height: 400px; margin-bottom: var(--space-2xl);" aria-hidden="true">
+              <div class="phone-notch"></div>
+              <div class="phone-screen" style="padding-top: 40px;">
+                <div class="phone-app-header" style="margin-bottom: 16px;">
+                  <div class="phone-app-icon" style="width: 24px; height: 24px; font-size: 11px;">F</div>
+                  <div class="phone-app-title" style="font-size: 10px;">Faidaza</div>
+                </div>
+                <div class="phone-voice-bar" style="margin-bottom: 10px; padding: 8px 12px;">
+                  <div class="phone-mic" style="width: 28px; height: 28px;">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/></svg>
+                  </div>
+                  <div class="phone-waveform" style="gap: 1px;">
+                    <span></span><span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+                <div class="phone-result" style="padding: 10px;">
+                  <div class="phone-result-label" style="font-size: 9px;">Faida ya Leo</div>
+                  <div class="phone-result-amount" style="font-size: 18px;">KES 340</div>
+                </div>
+              </div>
+            </div>
+            <h3 class="heading-3 mb-1">Faidaza</h3>
+            <p style="color: var(--color-text-secondary); margin-bottom: var(--space-xl);">The voice-first CFO for every informal worker. Speaks Kiswahili, works offline, free forever.</p>
+            <a href="/faidaza.html" class="btn btn--primary btn--small">Pata Faidaza →</a>
+          </article>
 
-<!-- CTA -->
-<section class="section text-center" style="background:linear-gradient(135deg,var(--orange),var(--orange-dark));border-radius:var(--radius);max-width:800px;margin:0 auto 64px;padding:48px 24px;color:#fff">
-  <h2 style="color:#fff">Ready to Make the Informal Economy Visible?</h2>
-  <p style="opacity:.9;margin:12px 0 24px">Whether you're a worker who needs a CFO or an institution that needs intelligence — we're building for you.</p>
-  <div class="hero-ctas">
-    <a href="/faidaza.html#download" class="btn" style="background:#fff;color:var(--orange)">📱 Pata Faidaza</a>
-    <a href="/contact.html" class="btn btn-outline" style="border-color:#fff;color:#fff">💬 Talk to Us</a>
-  </div>
-</section>
+          <!-- Core -->
+          <article class="card card--glass reveal" style="text-align: center;">
+            <div class="card-glow" aria-hidden="true"></div>
+            <span class="product-card-badge product-card-badge--green">B2B · Enterprise</span>
+            <div style="background: var(--color-bg-elevated); border-radius: var(--radius-lg); padding: var(--space-xl); margin-bottom: var(--space-2xl); border: 1px solid var(--color-border);">
+              <!-- Mini data viz -->
+              <div style="display: flex; align-items: flex-end; justify-content: center; gap: 8px; height: 120px;">
+                <div style="width: 24px; background: var(--gradient-brand); border-radius: 4px 4px 0 0; height: 40%; opacity: 0.6;"></div>
+                <div style="width: 24px; background: var(--gradient-brand); border-radius: 4px 4px 0 0; height: 55%; opacity: 0.7;"></div>
+                <div style="width: 24px; background: var(--gradient-brand); border-radius: 4px 4px 0 0; height: 35%; opacity: 0.5;"></div>
+                <div style="width: 24px; background: var(--color-primary); border-radius: 4px 4px 0 0; height: 70%; box-shadow: 0 0 12px rgba(232, 114, 42, 0.3);"></div>
+                <div style="width: 24px; background: var(--gradient-brand); border-radius: 4px 4px 0 0; height: 85%; opacity: 0.8;"></div>
+                <div style="width: 24px; background: var(--color-secondary); border-radius: 4px 4px 0 0; height: 60%; box-shadow: 0 0 12px rgba(45, 106, 79, 0.3);"></div>
+                <div style="width: 24px; background: var(--gradient-brand); border-radius: 4px 4px 0 0; height: 45%; opacity: 0.6;"></div>
+              </div>
+              <div style="margin-top: 12px; display: flex; justify-content: center; gap: 16px; font-family: var(--font-mono); font-size: 10px; color: var(--color-text-muted);">
+                <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+              </div>
+            </div>
+            <h3 class="heading-3 mb-1">CohusDex Core</h3>
+            <p style="color: var(--color-text-secondary); margin-bottom: var(--space-xl);">Intelligence products for the institutions that serve the informal economy — MFIs, FMCGs, governments, insurers.</p>
+            <a href="/products.html" class="btn btn--outline btn--small">Explore Products →</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<!-- Footer -->
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <h3>Cohus<span>Dex</span></h3>
-      <p>Economic Intelligence for Africa's Informal Economy. Built in Kenya, designed for the continent.</p>
-    </div>
-    <div class="footer-links">
-      <h4>Quick Links</h4>
-      <a href="/">Home</a>
-      <a href="/faidaza.html">Faidaza</a>
-      <a href="/products.html">Products</a>
-      <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
-    </div>
-    <div class="footer-contact">
-      <h4>Contact</h4>
-      <a href="mailto:hello@cohusdex.com">hello@cohusdex.com</a>
-      <a href="tel:+254115965493">+254 115 965 493</a>
-      <p style="color:rgba(255,255,255,.4);font-size:.85rem;margin-top:4px">Migori, Kenya</p>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    &copy; 2026 CohusDex. All rights reserved. Built for Africa.
-  </div>
-</footer>
+    <!-- How It Works -->
+    <section class="section" aria-labelledby="how-heading">
+      <div class="container">
+        <div class="section-label reveal text-center" style="display: block; margin-left: auto; margin-right: auto; width: fit-content;">How Faidaza Works</div>
+        <h2 id="how-heading" class="heading-2 reveal text-center mb-5">Three steps. One voice.<br>Clarity every day.</h2>
 
-<script src="/js/main.js"></script>
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step-number">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/></svg>
+            </div>
+            <p class="step-swahili">Sema</p>
+            <h4>Speak</h4>
+            <p>Tell Faidaza what you bought and sold today. Just talk — like you'd tell a friend. In Kiswahili, English, or your language.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step-number">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <p class="step-swahili">Hesabu</p>
+            <h4>Calculate</h4>
+            <p>Our AI crunches your numbers — revenue, costs, profit, trends — even offline on a KES 3,000 phone. No math required.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step-number">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <p class="step-swahili">Kua</p>
+            <h4>Grow</h4>
+            <p>Know your daily profit. See your trends. Make better decisions. Build a credit history no bank has ever offered you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who It's For -->
+    <section class="section" aria-labelledby="who-heading">
+      <div class="container">
+        <div class="section-label reveal text-center" style="display: block; margin-left: auto; margin-right: auto; width: fit-content;">Who It's For</div>
+        <h2 id="who-heading" class="heading-2 reveal text-center mb-5">Built for the people who<br>power Africa's economy.</h2>
+
+        <div class="workers-grid">
+          <div class="worker-card reveal">
+            <span class="worker-card-emoji" aria-hidden="true">🥬</span>
+            <div class="worker-card-name">Mama Mboga</div>
+            <div class="worker-card-english">Vegetable Seller</div>
+          </div>
+          <div class="worker-card reveal">
+            <span class="worker-card-emoji" aria-hidden="true">🏍️</span>
+            <div class="worker-card-name">Boda-boda</div>
+            <div class="worker-card-english">Motorcycle Taxi</div>
+          </div>
+          <div class="worker-card reveal">
+            <span class="worker-card-emoji" aria-hidden="true">🔧</span>
+            <div class="worker-card-name">Fundi</div>
+            <div class="worker-card-english">Craftsman / Mechanic</div>
+          </div>
+          <div class="worker-card reveal">
+            <span class="worker-card-emoji" aria-hidden="true">🐟</span>
+            <div class="worker-card-name">Mvuvi</div>
+            <div class="worker-card-english">Fisherman</div>
+          </div>
+          <div class="worker-card reveal">
+            <span class="worker-card-emoji" aria-hidden="true">🌽</span>
+            <div class="worker-card-name">Mkulima</div>
+            <div class="worker-card-english">Farmer</div>
+          </div>
+          <div class="worker-card reveal">
+            <span class="worker-card-emoji" aria-hidden="true">🍲</span>
+            <div class="worker-card-name">Mama Lishe</div>
+            <div class="worker-card-english">Food Vendor</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Data Gap -->
+    <section class="section" aria-labelledby="gap-heading">
+      <div class="container">
+        <div class="section-label reveal text-center" style="display: block; margin-left: auto; margin-right: auto; width: fit-content;">The Data Gap</div>
+        <h2 id="gap-heading" class="heading-2 reveal text-center mb-5">M-Pesa sees a balance.<br>Faidaza sees a business.</h2>
+
+        <div class="comparison reveal">
+          <div class="comparison-side comparison-side--wrong">
+            <span class="comparison-label comparison-label--wrong">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              What M-Pesa Sees
+            </span>
+            <div class="comparison-data">
+              <span style="color: var(--color-text-muted);">Balance:</span> KES 300 left<br>
+              <span style="color: var(--color-text-muted);">Last transaction:</span> -KES 350<br>
+              <span style="color: var(--color-text-muted);">That's it.</span> No context. No story.
+            </div>
+          </div>
+          <div class="comparison-side comparison-side--right">
+            <span class="comparison-label comparison-label--right">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              What Faidaza Sees
+            </span>
+            <div class="comparison-data">
+              <span style="color: var(--color-text-muted);">Bought:</span> 5kg tomatoes @ KES 60<br>
+              <span style="color: var(--color-text-muted);">Bought:</span> 2kg onions @ KES 80<br>
+              <span style="color: var(--color-text-muted);">Sold:</span> All stock by 2pm<br>
+              <span style="color: var(--color-secondary); font-weight: var(--fw-bold);">→ Daily profit: KES 340</span><br>
+              <span style="color: var(--color-text-muted);">→ This week:</span> Up 15% 📈
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="section" aria-labelledby="testimonial-heading">
+      <div class="container">
+        <h2 id="testimonial-heading" class="sr-only">What Our Users Say</h2>
+        <div class="testimonial reveal--fade reveal">
+          <blockquote class="testimonial-quote">
+            For 20 years I never knew my daily profit. I just worked and hoped. Now Faidaza tells me exactly — daily profit, weekly trend, everything. For the first time, I know my business has a heartbeat.
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">👩🏾</div>
+            <div style="text-align: left;">
+              <div class="testimonial-name">Mama Aoko</div>
+              <div class="testimonial-role">Vegetable Seller, Migori Market</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Preview -->
+    <section class="section" aria-labelledby="preview-heading">
+      <div class="container">
+        <div class="section-label reveal text-center" style="display: block; margin-left: auto; margin-right: auto; width: fit-content;">Enterprise Intelligence</div>
+        <h2 id="preview-heading" class="heading-2 reveal text-center mb-5">Products for the institutions<br>that serve the informal economy.</h2>
+
+        <div class="grid-4">
+          <article class="product-card reveal">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 class="heading-4 mb-1">Score</h3>
+            <p style="font-size: var(--fs-body-sm); color: var(--color-text-secondary); margin-bottom: var(--space-lg);">Credit intelligence for microfinance institutions. Lend with confidence to the unbanked.</p>
+            <a href="/products.html#score" class="btn-arrow">Learn More <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3l5 5-5 5"/></svg></a>
+          </article>
+          <article class="product-card reveal">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3 class="heading-4 mb-1">Pulse</h3>
+            <p style="font-size: var(--fs-body-sm); color: var(--color-text-secondary); margin-bottom: var(--space-lg);">Market intelligence for FMCG companies. Know what 500M informal consumers actually buy.</p>
+            <a href="/products.html#pulse" class="btn-arrow">Learn More <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3l5 5-5 5"/></svg></a>
+          </article>
+          <article class="product-card reveal">
+            <div class="card-icon card-icon--green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
+            </div>
+            <h3 class="heading-4 mb-1">Atlas</h3>
+            <p style="font-size: var(--fs-body-sm); color: var(--color-text-secondary); margin-bottom: var(--space-lg);">Economic mapping for governments and development agencies. See the invisible economy.</p>
+            <a href="/products.html#atlas" class="btn-arrow">Learn More <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3l5 5-5 5"/></svg></a>
+          </article>
+          <article class="product-card reveal">
+            <div class="card-icon card-icon--green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="heading-4 mb-1">Data</h3>
+            <p style="font-size: var(--fs-body-sm); color: var(--color-text-secondary); margin-bottom: var(--space-lg);">Risk profiles for insurance companies. Underwrite the informal sector with real data, not guesswork.</p>
+            <a href="/products.html#data" class="btn-arrow">Learn More <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3l5 5-5 5"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="section" aria-labelledby="cta-heading" style="padding-bottom: 0;">
+      <div class="container" style="text-align: center;">
+        <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-2xl); padding: var(--space-4xl) var(--space-2xl); position: relative; overflow: hidden;">
+          <div style="position: absolute; top: -50%; left: 50%; transform: translateX(-50%); width: 500px; height: 500px; background: radial-gradient(circle, rgba(232, 114, 42, 0.08) 0%, transparent 70%); pointer-events: none;" aria-hidden="true"></div>
+          <div style="position: relative; z-index: 1;">
+            <h2 class="heading-2 reveal mb-2">Ready to see the invisible economy?</h2>
+            <p class="text-body-lg reveal mb-3" style="max-width: 500px; margin-left: auto; margin-right: auto;">
+              Whether you're a trader who wants to know your profit, or an institution that wants to serve 500 million people better — we're building for you.
+            </p>
+            <div class="reveal" style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap;">
+              <a href="/faidaza.html#download" class="btn btn--primary btn--large">Get Faidaza Free</a>
+              <a href="/contact.html" class="btn btn--outline btn--large">Partner With Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <span class="nav-logo-dot" aria-hidden="true"></span>CohusDex
+          </div>
+          <p class="footer-brand">
+            Economic intelligence for Africa's informal economy. Building the tools that let every worker understand their business — starting with a voice they already speak.
+          </p>
+        </div>
+        <div>
+          <h3 class="footer-heading">Products</h3>
+          <ul class="footer-links">
+            <li><a href="/faidaza.html">Faidaza</a></li>
+            <li><a href="/products.html#score">Score</a></li>
+            <li><a href="/products.html#pulse">Pulse</a></li>
+            <li><a href="/products.html#atlas">Atlas</a></li>
+            <li><a href="/products.html#data">Data</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Company</h3>
+          <ul class="footer-links">
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/about.html#mission">Mission</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/contact.html">Partner</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Contact</h3>
+          <ul class="footer-links">
+            <li><a href="mailto:valentineowuor12@gmail.com">valentineowuor12@gmail.com</a></li>
+            <li><a href="tel:+254115965493">+254 115 965 493</a></li>
+            <li>Migori, Kenya</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Built in Migori, Kenya. For Africa.</span>
+        <span>© 2025 CohusDex. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
 </body>
 </html>

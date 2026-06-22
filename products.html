@@ -1,188 +1,372 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="CohusDex Core — B2B economic intelligence products. Score for microfinance credit decisions. Pulse for FMCG market intelligence. Atlas for government economic mapping. Data for insurance risk profiling.">
-<meta name="theme-color" content="#E8722A">
-<link rel="icon" type="image/png" href="/assets/favicon.png">
-<link rel="apple-touch-icon" href="/assets/icon-192.png">
-<link rel="manifest" href="/manifest.json">
-<link rel="stylesheet" href="/css/style.css">
-<meta property="og:title" content="Products — CohusDex Core | Economic Intelligence for Institutions">
-<meta property="og:description" content="CohusDex Score, Pulse, Atlas, Data. B2B economic intelligence for microfinance, FMCG, government, and insurance. Powered by real data from Africa's informal economy.">
-<meta property="og:image" content="https://cohusdex.com/assets/og-image.png">
-<meta property="og:url" content="https://cohusdex.com/products.html">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="CohusDex Core — Economic Intelligence for Institutions">
-<meta name="twitter:description" content="Score, Pulse, Atlas, Data. Intelligence for the institutions that serve Africa's informal economy.">
-<meta name="twitter:image" content="https://cohusdex.com/assets/og-image.png">
-<link rel="canonical" href="https://cohusdex.com/products.html">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0A0A0A">
+  <meta name="description" content="CohusDex enterprise products: Score (credit intelligence for MFIs), Pulse (market intelligence for FMCGs), Atlas (economic mapping), Data (insurance risk profiles). Built for the institutions that serve Africa's 500M informal workers.">
+  <meta name="keywords" content="credit scoring, MFI, microfinance, market intelligence, FMCG, economic mapping, insurance, Africa">
+
+  <meta property="og:title" content="CohusDex Products — Intelligence for Institutions">
+  <meta property="og:description" content="Score, Pulse, Atlas, Data — four products built on the foundation of 44 Economics & Statistics degree units.">
+  <meta property="og:image" content="/assets/og-image.png">
+  <meta property="og:url" content="https://cohusdex.com/products">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CohusDex Products — Intelligence for Institutions">
+  <meta name="twitter:description" content="Enterprise intelligence products for MFIs, FMCGs, governments, and insurers.">
+  <meta name="twitter:image" content="/assets/og-image.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "CohusDex Enterprise Products",
+    "description": "Score, Pulse, Atlas, Data — enterprise intelligence products for MFIs, FMCGs, governments, and insurers serving Africa's informal economy.",
+    "about": {
+      "@type": "Organization",
+      "name": "CohusDex"
+    }
+  }
+  </script>
+  <title>CohusDex Products — Enterprise Intelligence for Institutions</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/icon.svg">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/icon-192.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="canonical" href="https://cohusdex.com/products">
 </head>
 <body>
+  <div class="bg-glow bg-glow--orange" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--green" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
 
-<!-- Navigation -->
-<nav class="nav" role="navigation">
-  <div class="nav-inner">
-    <a href="/" class="nav-logo">Cohus<span>Dex</span></a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" onclick="toggleNav()">☰</button>
-    <ul class="nav-links" role="menubar">
-      <li role="none"><a href="/" role="menuitem">Nyumbani</a></li>
-      <li role="none"><a href="/faidaza.html" role="menuitem">Faidaza</a></li>
-      <li role="none"><a href="/products.html" class="active" role="menuitem">Bidhaa</a></li>
-      <li role="none"><a href="/about.html" role="menuitem">Kuhusu</a></li>
-      <li role="none"><a href="/contact.html" role="menuitem">Wasiliana</a></li>
-      <li role="none"><a href="/contact.html" class="nav-cta" role="menuitem">Partner with Us</a></li>
-    </ul>
-  </div>
-</nav>
+  <header class="nav" role="banner">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="CohusDex Home">
+        <span class="nav-logo-dot" aria-hidden="true"></span>CohusDex
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="/products.html" class="nav-link">Products</a>
+        <a href="/faidaza.html" class="nav-link">Faidaza</a>
+        <a href="/about.html" class="nav-link">About</a>
+        <a href="/contact.html" class="nav-link">Contact</a>
+        <a href="/contact.html" class="nav-cta">Partner With Us</a>
+      </nav>
+    </div>
+  </header>
 
-<!-- Hero -->
-<section class="hero" style="max-width:850px">
-  <div class="hero-badge">📊 B2B Intelligence</div>
-  <h1>Data from the Real Economy</h1>
-  <p>Powered by advanced AI and statistical models. Built on direct engagement with Africa's informal workers. Actionable intelligence for the institutions that serve them.</p>
-  <div class="hero-ctas mt-2">
-    <a href="/contact.html" class="btn btn-green btn-lg">🤝 Partner with Us</a>
-    <a href="#products" class="btn btn-secondary btn-lg">🔽 Explore Products</a>
-  </div>
-</section>
-
-<!-- Products -->
-<section class="section section-alt" id="products">
-  <div class="section-header">
-    <h2>Four Products. One Platform.</h2>
-    <p>Each designed for a different institution. All powered by the same source: real data from Africa's informal economy.</p>
-  </div>
-
-  <div class="grid grid-2" style="max-width:900px;margin:0 auto">
+  <main id="main-content">
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <div class="section-label reveal text-center mb-1" style="display: block;">
+          <span style="margin: 0 auto; display: inline-flex; align-items: center; gap: var(--space-sm);">
+            <span style="width: 24px; height: 1px; background: var(--color-primary); opacity: 0.5;"></span>
+            Enterprise Intelligence
+          </span>
+        </div>
+        <h1 class="heading-1 reveal">Products for the institutions<br>that serve Africa's economy.</h1>
+        <p class="reveal">Four data products built on the foundation of rigorous economic analysis — 44 Economics &amp; Statistics degree units, field research at Demulla Microfinance, and a mission to make the invisible economy visible.</p>
+      </div>
+    </section>
 
     <!-- Score -->
-    <div class="product-block" style="border-left-color:#E8722A">
-      <div class="icon">🎯</div>
-      <h3>CohusDex Score</h3>
-      <p style="color:var(--orange);font-weight:600;font-size:.85rem;margin-bottom:8px">For Microfinance Institutions</p>
-      <p>Better credit decisions through data-driven borrower financial strength scoring. Our models analyze real transaction patterns — not subjective field officer interviews. Replace 30-minute home visits with a score built on actual economic behavior. Reduce default rates. Increase portfolio quality.</p>
-      <p style="font-size:.8rem;color:var(--gray);margin-top:8px"><em>Powered by advanced statistical models trained on informal sector transaction data.</em></p>
-    </div>
+    <section class="section" id="score" aria-labelledby="score-heading">
+      <div class="container">
+        <div class="two-col two-col--wide">
+          <div class="reveal">
+            <div class="b2b-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <span class="badge" style="margin-bottom: var(--space-md);">For MFIs</span>
+            <h2 id="score-heading" class="heading-2 mb-2">CohusDex Score</h2>
+            <p class="text-body-lg mb-3">Credit intelligence for microfinance institutions. Lend with confidence to the 500 million workers traditional banks ignore.</p>
+
+            <div class="b2b-capabilities">
+              <span class="b2b-capability">Behavioral credit scoring</span>
+              <span class="b2b-capability">Daily cash flow analysis</span>
+              <span class="b2b-capability">Default risk prediction</span>
+              <span class="b2b-capability">Group lending profiles</span>
+              <span class="b2b-capability">Portfolio risk dashboard</span>
+              <span class="b2b-capability">Repayment pattern insights</span>
+            </div>
+
+            <p style="font-size: var(--fs-body-sm); color: var(--color-text-secondary); margin-bottom: var(--space-2xl);">
+              Traditional credit scores don't work for the informal sector. No payslips. No bank statements. No collateral. Score builds credit profiles from what informal workers actually have: daily transaction history, business patterns, and community reputation — captured naturally through Faidaza.
+            </p>
+
+            <a href="/contact.html?product=score" class="btn btn--primary">
+              Request Demo
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3l5 5-5 5"/></svg>
+            </a>
+          </div>
+          <div class="reveal--fade reveal">
+            <div class="b2b-card">
+              <div style="display: flex; align-items: flex-end; gap: 3px; height: 200px; padding: 0 20px;">
+                <div style="flex: 1; background: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-secondary-dim) 100%); border-radius: 4px 4px 0 0; height: 35%; opacity: 0.4;"></div>
+                <div style="flex: 1; background: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-secondary-dim) 100%); border-radius: 4px 4px 0 0; height: 50%; opacity: 0.5;"></div>
+                <div style="flex: 1; background: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-secondary-dim) 100%); border-radius: 4px 4px 0 0; height: 40%; opacity: 0.45;"></div>
+                <div style="flex: 1; background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-primary-dim) 100%); border-radius: 4px 4px 0 0; height: 65%; box-shadow: 0 0 16px rgba(232, 114, 42, 0.2);"></div>
+                <div style="flex: 1; background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-primary-dim) 100%); border-radius: 4px 4px 0 0; height: 75%; box-shadow: 0 0 16px rgba(232, 114, 42, 0.2);"></div>
+                <div style="flex: 1; background: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-secondary-dim) 100%); border-radius: 4px 4px 0 0; height: 55%; opacity: 0.55;"></div>
+                <div style="flex: 1; background: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-secondary-dim) 100%); border-radius: 4px 4px 0 0; height: 45%; opacity: 0.5;"></div>
+                <div style="flex: 1; background: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-secondary-dim) 100%); border-radius: 4px 4px 0 0; height: 30%; opacity: 0.4;"></div>
+              </div>
+              <p style="text-align: center; font-size: var(--fs-body-sm); color: var(--color-text-muted); margin-top: var(--space-lg);">Credit Score Distribution — Informal Trader Cohort</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Pulse -->
-    <div class="product-block">
-      <div class="icon">📈</div>
-      <h3>CohusDex Pulse</h3>
-      <p style="color:var(--green);font-weight:600;font-size:.85rem;margin-bottom:8px">For FMCG & Distribution Companies</p>
-      <p>Real-time market intelligence from Africa's informal economy. Understand pricing dynamics, demand patterns, and distribution flows at the street level. Know what's selling, where, and at what price — without sending survey teams. Optimize your supply chain with ground-truth data.</p>
-      <p style="font-size:.8rem;color:var(--gray);margin-top:8px"><em>Aggregated, anonymized market intelligence from thousands of touchpoints.</em></p>
-    </div>
+    <section class="section" id="pulse" aria-labelledby="pulse-heading" style="background: var(--color-bg-elevated);">
+      <div class="container">
+        <div class="two-col two-col--wide" style="direction: rtl;">
+          <div style="direction: ltr;" class="reveal">
+            <div class="b2b-card-icon card-icon--green">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <span class="badge">For FMCGs</span>
+            <h2 id="pulse-heading" class="heading-2 mb-2">CohusDex Pulse</h2>
+            <p class="text-body-lg mb-3">Market intelligence for FMCG companies. Know what 500 million informal consumers actually buy, when they buy it, and at what price point.</p>
+
+            <div class="b2b-capabilities">
+              <span class="b2b-capability">Real-time purchase tracking</span>
+              <span class="b2b-capability">Price sensitivity mapping</span>
+              <span class="b2b-capability">Product affinity analysis</span>
+              <span class="b2b-capability">Regional demand patterns</span>
+              <span class="b2b-capability">Stock movement velocity</span>
+              <span class="b2b-capability">Competitor share estimation</span>
+            </div>
+
+            <p style="font-size: var(--fs-body-sm); color: var(--color-text-secondary); margin-bottom: var(--space-2xl);">
+              FMCG companies spend millions on market research that never reaches the informal sector. Pulse captures purchase data directly from traders — not surveys, not panels, not guesses. Actual buying behavior from the 85% of African retail that happens outside formal channels.
+            </p>
+
+            <a href="/contact.html?product=pulse" class="btn btn--outline">
+              Request Demo
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3l5 5-5 5"/></svg>
+            </a>
+          </div>
+          <div style="direction: ltr;" class="reveal--fade reveal">
+            <div class="b2b-card">
+              <div style="display: flex; justify-content: center; gap: 16px; padding: 20px; flex-wrap: wrap;">
+                <div style="text-align: center; padding: 16px 24px; background: rgba(255,255,255,0.03); border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+                  <div style="font-size: 2rem; margin-bottom: 4px;">🧴</div>
+                  <div style="font-size: 12px; color: var(--color-text-secondary);">Cooking Oil</div>
+                  <div style="font-size: 1.25rem; font-weight: var(--fw-bold); color: var(--color-primary);">KES 120</div>
+                  <div style="font-size: 11px; color: var(--color-secondary);">↑ 8% this week</div>
+                </div>
+                <div style="text-align: center; padding: 16px 24px; background: rgba(255,255,255,0.03); border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+                  <div style="font-size: 2rem; margin-bottom: 4px;">🌽</div>
+                  <div style="font-size: 12px; color: var(--color-text-secondary);">Maize Flour</div>
+                  <div style="font-size: 1.25rem; font-weight: var(--fw-bold); color: var(--color-primary);">KES 85</div>
+                  <div style="font-size: 11px; color: #FF6B6B;">↓ 3% this week</div>
+                </div>
+                <div style="text-align: center; padding: 16px 24px; background: rgba(255,255,255,0.03); border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+                  <div style="font-size: 2rem; margin-bottom: 4px;">🧼</div>
+                  <div style="font-size: 12px; color: var(--color-text-secondary);">Bar Soap</div>
+                  <div style="font-size: 1.25rem; font-weight: var(--fw-bold); color: var(--color-primary);">KES 45</div>
+                  <div style="font-size: 11px; color: var(--color-text-secondary);">Stable</div>
+                </div>
+              </div>
+              <p style="text-align: center; font-size: var(--fs-body-sm); color: var(--color-text-muted); margin-top: var(--space-lg);">FMCG Price Tracking — Migori Market</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Atlas -->
-    <div class="product-block" style="border-left-color:#E8722A">
-      <div class="icon">🗺️</div>
-      <h3>CohusDex Atlas</h3>
-      <p style="color:var(--orange);font-weight:600;font-size:.85rem;margin-bottom:8px">For Governments & Development Agencies</p>
-      <p>The first real-time map of the informal economy. Visualize economic activity at the neighborhood level. Track shifts in employment, income, and market health. Make policy decisions based on current data — not a census from 5 years ago. Finally see the economy that's always been invisible.</p>
-      <p style="font-size:.8rem;color:var(--gray);margin-top:8px"><em>Powered by advanced geospatial and economic modeling.</em></p>
-    </div>
+    <section class="section" id="atlas" aria-labelledby="atlas-heading">
+      <div class="container">
+        <div class="two-col two-col--wide">
+          <div class="reveal">
+            <div class="b2b-card-icon card-icon--green">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
+            </div>
+            <span class="badge" style="background: var(--color-secondary-dim); border-color: rgba(45, 106, 79, 0.2); color: var(--color-secondary);">For Governments &amp; Development Agencies</span>
+            <h2 id="atlas-heading" class="heading-2 mb-2">CohusDex Atlas</h2>
+            <p class="text-body-lg mb-3">Economic mapping for governments and development agencies. See the invisible economy — in real time, at street level.</p>
+
+            <div class="b2b-capabilities">
+              <span class="b2b-capability">Informal sector GDP estimation</span>
+              <span class="b2b-capability">Trade corridor mapping</span>
+              <span class="b2b-capability">Employment pattern analysis</span>
+              <span class="b2b-capability">Poverty indicator tracking</span>
+              <span class="b2b-capability">Policy impact simulation</span>
+              <span class="b2b-capability">Cross-border trade insights</span>
+            </div>
+
+            <p style="font-size: var(--fs-body-sm); color: var(--color-text-secondary); margin-bottom: var(--space-2xl);">
+              Governments make economic policy for the informal sector blindfolded — because they can't measure what they can't see. Atlas turns daily trader transactions into economic maps: where money flows, what sectors are growing, and which communities need support.
+            </p>
+
+            <a href="/contact.html?product=atlas" class="btn btn--primary">
+              Request Demo
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3l5 5-5 5"/></svg>
+            </a>
+          </div>
+          <div class="reveal--fade reveal">
+            <div class="b2b-card" style="display: flex; align-items: center; justify-content: center; min-height: 320px;">
+              <div style="text-align: center;">
+                <div style="font-size: 4rem; margin-bottom: var(--space-md);">🗺️</div>
+                <div style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
+                  <span style="padding: 4px 12px; background: var(--color-primary-dim); border-radius: var(--radius-full); font-size: 11px; color: var(--color-primary);">Migori</span>
+                  <span style="padding: 4px 12px; background: var(--color-secondary-dim); border-radius: var(--radius-full); font-size: 11px; color: var(--color-secondary);">Kisumu</span>
+                  <span style="padding: 4px 12px; background: var(--color-primary-dim); border-radius: var(--radius-full); font-size: 11px; color: var(--color-primary);">Kakamega</span>
+                  <span style="padding: 4px 12px; background: var(--color-secondary-dim); border-radius: var(--radius-full); font-size: 11px; color: var(--color-secondary);">Nairobi</span>
+                  <span style="padding: 4px 12px; background: rgba(255,255,255,0.05); border-radius: var(--radius-full); font-size: 11px; color: var(--color-text-muted);">+12 more</span>
+                </div>
+                <div style="margin-top: var(--space-xl); font-size: var(--fs-body-sm); color: var(--color-text-muted);">Economic Activity Heatmap — Lake Region</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Data -->
-    <div class="product-block">
-      <div class="icon">🛡️</div>
-      <h3>CohusDex Data</h3>
-      <p style="color:var(--green);font-weight:600;font-size:.85rem;margin-bottom:8px">For Insurance Companies</p>
-      <p>Risk profiles for the uninsured. Our models assess informal worker income stability, seasonality patterns, and financial resilience — making it possible to underwrite populations that traditional actuarial tables ignore. Make the uninsurable insurable. Open an entirely new market.</p>
-      <p style="font-size:.8rem;color:var(--gray);margin-top:8px"><em>Built on proprietary risk assessment frameworks for informal sector populations.</em></p>
-    </div>
+    <section class="section" id="data" aria-labelledby="data-heading" style="background: var(--color-bg-elevated);">
+      <div class="container">
+        <div class="two-col two-col--wide" style="direction: rtl;">
+          <div style="direction: ltr;" class="reveal">
+            <div class="b2b-card-icon card-icon--green">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span class="badge" style="background: var(--color-secondary-dim); border-color: rgba(45, 106, 79, 0.2); color: var(--color-secondary);">For Insurance Companies</span>
+            <h2 id="data-heading" class="heading-2 mb-2">CohusDex Data</h2>
+            <p class="text-body-lg mb-3">Risk profiles for insurance companies. Underwrite the informal sector with real data, not guesswork.</p>
 
-  </div>
-</section>
+            <div class="b2b-capabilities">
+              <span class="b2b-capability">Income volatility modeling</span>
+              <span class="b2b-capability">Business continuity risk</span>
+              <span class="b2b-capability">Health expenditure patterns</span>
+              <span class="b2b-capability">Asset depreciation curves</span>
+              <span class="b2b-capability">Seasonal income forecasting</span>
+              <span class="b2b-capability">Micro-insurance pricing</span>
+            </div>
 
-<!-- How We're Different -->
-<section class="section text-center">
-  <div class="section-header">
-    <h2>Why Our Data is Different</h2>
-    <p>Traditional data misses the informal economy by design. We don't.</p>
-  </div>
-  <div class="grid grid-3" style="max-width:800px;margin:0 auto">
-    <div class="card">
-      <div style="font-size:2rem;margin-bottom:8px">📱</div>
-      <h3>Direct from Source</h3>
-      <p>Our data comes from actual workers using Faidaza — not surveys, not estimates, not government projections.</p>
-    </div>
-    <div class="card">
-      <div style="font-size:2rem;margin-bottom:8px">⏱️</div>
-      <h3>Real-Time, Not Retrospective</h3>
-      <p>Daily transaction data. Not "what did you earn last month?" Current, accurate, actionable.</p>
-    </div>
-    <div class="card">
-      <div style="font-size:2rem;margin-bottom:8px">🔒</div>
-      <h3>Privacy by Design</h3>
-      <p>All institutional data is aggregated and anonymized. No individual worker is ever identifiable.</p>
-    </div>
-  </div>
-</section>
+            <p style="font-size: var(--fs-body-sm); color: var(--color-text-secondary); margin-bottom: var(--space-2xl);">
+              Insurance companies can't underwrite what they can't measure. The informal sector is the world's largest untapped insurance market — not because people don't want insurance, but because insurers have no data. Data changes that equation.
+            </p>
 
-<!-- Data Flow -->
-<section class="section section-alt text-center">
-  <div class="section-header">
-    <h2>How the Data Flows</h2>
-    <p>A simple, transparent model.</p>
-  </div>
-  <div class="steps" style="max-width:750px;margin:0 auto">
-    <div class="step">
-      <div class="step-num" style="background:var(--orange)">1</div>
-      <h4>Workers Use Faidaza</h4>
-      <p>Free, offline, voice-first. They track daily transactions. Data lives on their phone.</p>
-    </div>
-    <div class="step">
-      <div class="step-num" style="background:var(--green)">2</div>
-      <h4>Optional, Anonymized Sync</h4>
-      <p>With consent, anonymized patterns sync when online. No personal identifiers.</p>
-    </div>
-    <div class="step">
-      <div class="step-num" style="background:var(--orange)">3</div>
-      <h4>Institutions Subscribe</h4>
-      <p>Your organization gets intelligence. Workers get Faidaza free. Everyone wins.</p>
-    </div>
-  </div>
-</section>
+            <a href="/contact.html?product=data" class="btn btn--outline">
+              Request Demo
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3l5 5-5 5"/></svg>
+            </a>
+          </div>
+          <div style="direction: ltr;" class="reveal--fade reveal">
+            <div class="b2b-card">
+              <div style="display: flex; gap: 16px; align-items: flex-end; justify-content: center; height: 200px; padding: 0 20px;">
+                <div style="text-align: center;">
+                  <div style="width: 40px; background: linear-gradient(180deg, #E8722A 0%, rgba(232,114,42,0.2) 100%); border-radius: 6px 6px 0 0; height: 120px;"></div>
+                  <div style="font-size: 10px; color: var(--color-text-muted); margin-top: 8px;">Dry<br>Season</div>
+                </div>
+                <div style="text-align: center;">
+                  <div style="width: 40px; background: linear-gradient(180deg, var(--color-secondary) 0%, rgba(45,106,79,0.2) 100%); border-radius: 6px 6px 0 0; height: 160px;"></div>
+                  <div style="font-size: 10px; color: var(--color-text-muted); margin-top: 8px;">Planting<br>Season</div>
+                </div>
+                <div style="text-align: center;">
+                  <div style="width: 40px; background: linear-gradient(180deg, var(--color-secondary) 0%, rgba(45,106,79,0.2) 100%); border-radius: 6px 6px 0 0; height: 140px;"></div>
+                  <div style="font-size: 10px; color: var(--color-text-muted); margin-top: 8px;">Harvest<br>Season</div>
+                </div>
+                <div style="text-align: center;">
+                  <div style="width: 40px; background: linear-gradient(180deg, #FF6B6B 0%, rgba(255,107,107,0.2) 100%); border-radius: 6px 6px 0 0; height: 80px;"></div>
+                  <div style="font-size: 10px; color: var(--color-text-muted); margin-top: 8px;">Lean<br>Season</div>
+                </div>
+              </div>
+              <p style="text-align: center; font-size: var(--fs-body-sm); color: var(--color-text-muted); margin-top: var(--space-lg);">Income Volatility by Season — Smallholder Farmer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- CTA -->
-<section class="section text-center">
-  <div style="background:var(--green);padding:48px 24px;border-radius:var(--radius);color:#fff;max-width:700px;margin:0 auto">
-    <h2 style="color:#fff">Ready to See the Informal Economy?</h2>
-    <p style="opacity:.9;margin:12px 0 24px">Whether you're lending, distributing, governing, or insuring — we have the data you've been missing.</p>
-    <a href="/contact.html" class="btn" style="background:#fff;color:var(--green);font-weight:700">🤝 Partner with Us</a>
-  </div>
-</section>
+    <!-- Powered by -->
+    <section class="section" style="text-align: center;">
+      <div class="container">
+        <div class="reveal">
+          <span class="badge" style="margin-bottom: var(--space-lg);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Powered by Rigorous Analysis
+          </span>
+          <h2 class="heading-3 reveal mb-2" style="max-width: 600px; margin-left: auto; margin-right: auto;">
+            44 Economics &amp; Statistics degree units. Field research at Demulla Microfinance. Built at Masinde Muliro University.
+          </h2>
+          <p class="text-body-lg reveal" style="color: var(--color-text-muted); max-width: 500px; margin-left: auto; margin-right: auto;">
+            Our products aren't built on assumptions. They're built on the same statistical methods that power central banks and national statistics offices — applied to the data that has never been collected.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<!-- Footer -->
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <h3>Cohus<span>Dex</span></h3>
-      <p>Economic Intelligence for Africa's Informal Economy. Built in Kenya, designed for the continent.</p>
-    </div>
-    <div class="footer-links">
-      <h4>Quick Links</h4>
-      <a href="/">Home</a>
-      <a href="/faidaza.html">Faidaza</a>
-      <a href="/products.html">Products</a>
-      <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
-    </div>
-    <div class="footer-contact">
-      <h4>Contact</h4>
-      <a href="mailto:hello@cohusdex.com">hello@cohusdex.com</a>
-      <a href="tel:+254115965493">+254 115 965 493</a>
-      <p style="color:rgba(255,255,255,.4);font-size:.85rem;margin-top:4px">Migori, Kenya</p>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    &copy; 2026 CohusDex. All rights reserved.
-  </div>
-</footer>
+    <!-- CTA -->
+    <section class="section" style="text-align: center;">
+      <div class="container">
+        <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-2xl); padding: var(--space-4xl) var(--space-2xl); position: relative; overflow: hidden;" class="reveal--fade reveal">
+          <div style="position: absolute; top: -50%; left: 50%; transform: translateX(-50%); width: 500px; height: 500px; background: radial-gradient(circle, rgba(45, 106, 79, 0.08) 0%, transparent 70%); pointer-events: none;" aria-hidden="true"></div>
+          <div style="position: relative; z-index: 1;">
+            <h2 class="heading-2 mb-2">Ready to serve the invisible economy?</h2>
+            <p class="text-body-lg mb-3" style="max-width: 500px; margin-left: auto; margin-right: auto;">
+              Request a demo of any product. Our team will walk you through the data, the methodology, and the opportunity.
+            </p>
+            <a href="/contact.html" class="btn btn--primary btn--large">Request a Demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<script src="/js/main.js"></script>
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><span class="nav-logo-dot" aria-hidden="true"></span>CohusDex</div>
+          <p class="footer-brand">Economic intelligence for Africa's informal economy. Building the tools that let every worker understand their business.</p>
+        </div>
+        <div>
+          <h3 class="footer-heading">Products</h3>
+          <ul class="footer-links">
+            <li><a href="/faidaza.html">Faidaza</a></li>
+            <li><a href="#score">Score</a></li>
+            <li><a href="#pulse">Pulse</a></li>
+            <li><a href="#atlas">Atlas</a></li>
+            <li><a href="#data">Data</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Company</h3>
+          <ul class="footer-links">
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/contact.html">Partner</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Contact</h3>
+          <ul class="footer-links">
+            <li><a href="mailto:valentineowuor12@gmail.com">valentineowuor12@gmail.com</a></li>
+            <li><a href="tel:+254115965493">+254 115 965 493</a></li>
+            <li>Migori, Kenya</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Built in Migori, Kenya. For Africa.</span>
+        <span>© 2025 CohusDex. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
 </body>
 </html>
