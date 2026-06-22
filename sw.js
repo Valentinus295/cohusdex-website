@@ -1,82 +1,74 @@
-/* ═══════════════════════════════════════════════════════════════════════════
-   CohusDex Service Worker v2.0
-   Offline-first caching for all pages and assets
-   ═══════════════════════════════════════════════════════════════════════════ */
+/* ============================================
+   COHUSDEX — Service Worker
+   Cache-first strategy for static assets
+   ============================================ */
 
-const CACHE_NAME = 'cohusdex-v2';
-const PRECACHE_URLS = [
+var CACHE_NAME = 'cohusdex-v1';
+var STATIC_ASSETS = [
   '/',
   '/index.html',
-  '/faidaza.html',
-  '/products.html',
-  '/about.html',
-  '/contact.html',
   '/css/style.css',
   '/js/main.js',
-  '/manifest.json',
-  '/assets/icon-192.png',
-  '/assets/icon-512.png',
-  '/assets/favicon.png',
-  '/assets/icon.svg'
+  '/manifest.json'
 ];
 
-// Install: precache core assets
-self.addEventListener('install', (event) => {
+// Install: cache static assets
+self.addEventListener('install', function (event) {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then((cache) => cache.addAll(PRECACHE_URLS))
-      .then(() => self.skipWaiting())
+    caches.open(CACHE_NAME).then(function (cache) {
+      return cache.addAll(STATIC_ASSETS);
+    })
   );
+  self.skipWaiting();
 });
 
 // Activate: clean old caches
-self.addEventListener('activate', (event) => {
+self.addEventListener('activate', function (event) {
   event.waitUntil(
-    caches.keys().then((cacheNames) => {
+    caches.keys().then(function (keys) {
       return Promise.all(
-        cacheNames
-          .filter((name) => name !== CACHE_NAME)
-          .map((name) => caches.delete(name))
+        keys.filter(function (key) {
+          return key !== CACHE_NAME;
+        }).map(function (key) {
+          return caches.delete(key);
+        })
       );
-    }).then(() => self.clients.claim())
+    })
   );
+  self.clients.claim();
 });
 
-// Fetch: cache-first for assets, network-first for pages
-self.addEventListener('fetch', (event) => {
-  const { request } = event;
-  const url = new URL(request.url);
+// Fetch: cache-first, network fallback
+self.addEventListener('fetch', function (event) {
+  // Skip non-GET and external requests
+  if (event.request.method !== 'GET') return;
 
-  // Skip non-GET requests
-  if (request.method !== 'GET') return;
+  var url = new URL(event.request.url);
 
-  // Skip chrome-extension and other non-http(s) requests
-  if (!url.protocol.startsWith('http')) return;
-
-  // For HTML pages: network-first (so users get latest content)
-  if (request.mode === 'navigate' || request.headers.get('Accept')?.includes('text/html')) {
-    event.respondWith(
-      fetch(request)
-        .then((response) => {
-          const cloned = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(request, cloned));
-          return response;
-        })
-        .catch(() => caches.match(request))
-    );
+  // Skip Google Fonts, APIs, and external resources
+  if (url.hostname.includes('googleapis.com') ||
+      url.hostname.includes('gstatic.com') ||
+      url.hostname.includes('api.cohusdex.com') ||
+      url.hostname.includes('formspree.io') ||
+      url.hostname.includes('github.com')) {
     return;
   }
 
-  // For CSS, JS, images, fonts, manifest: cache-first
   event.respondWith(
-    caches.match(request)
-      .then((cached) => {
-        if (cached) return cached;
-        return fetch(request).then((response) => {
-          const cloned = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(request, cloned));
-          return response;
-        });
-      })
+    caches.match(event.request).then(function (cached) {
+      var fetched = fetch(event.request).then(function (response) {
+        if (response && response.status === 200) {
+          var clone = response.clone();
+          caches.open(CACHE_NAME).then(function (cache) {
+            cache.put(event.request, clone);
+          });
+        }
+        return response;
+      }).catch(function () {
+        return cached || new Response('Offline', { status: 503 });
+      });
+
+      return cached || fetched;
+    })
   );
 });

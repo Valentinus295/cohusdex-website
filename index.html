@@ -2,278 +2,671 @@
 <html lang="sw">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CohusDex — Economic Intelligence for Africa's Informal Economy</title>
-  <meta name="description" content="CohusDex builds Faidaza (voice-first AI CFO for informal workers) and CohusDex Core (economic intelligence for MFIs, FMCGs, governments, and insurers). Kenya → Africa.">
+  <meta name="description" content="CohusDex builds economic intelligence tools for Africa's informal economy. Our flagship product Faidaza is a voice-first AI CFO for every informal worker. Built in Migori, Kenya. For Africa.">
   <meta name="theme-color" content="#E8722A">
-  <meta property="og:title" content="CohusDex — Economic Intelligence for Africa">
-  <meta property="og:description" content="Voice-first AI CFO for 500M+ informal workers. Economic intelligence for institutions. Free. Offline. Your language.">
+  <meta name="author" content="CohusDex">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="CohusDex — Economic Intelligence for Africa's Informal Economy">
+  <meta property="og:description" content="Voice-first AI CFO for Africa's 500M+ informal workers. Starting in Kenya. Free. Offline. Your language.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/og-image.png">
+  <meta property="og:url" content="https://cohusdex.com">
+  <meta property="og:site_name" content="CohusDex">
+
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"CohusDex","description":"Economic Intelligence for Africa's Informal Economy","url":"https://cohusdex.com","founder":{"@type":"Person","name":"Valentine Owuor"},"foundingLocation":"Migori, Kenya"}</script>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="twitter:title" content="CohusDex — Economic Intelligence for Africa">
+  <meta name="twitter:description" content="Voice-first AI CFO for Africa's informal economy. Free. Offline. Your language.">
+
+  <!-- PWA -->
   <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CohusDex",
+    "url": "https://cohusdex.com",
+    "description": "Economic intelligence for Africa's informal economy. Building Faidaza — a voice-first AI CFO for informal workers.",
+    "foundingDate": "2024",
+    "founder": {
+      "@type": "Person",
+      "name": "Valentine Owuor",
+      "jobTitle": "Founder & CEO",
+      "alumniOf": "Masinde Muliro University of Science and Technology"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Migori",
+      "addressCountry": "KE"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "cohusdex@gmail.com",
+      "contactType": "customer service"
+    },
+    "sameAs": [
+      "https://github.com/Valentinus295"
+    ]
+  }
+  </script>
 </head>
 <body>
 
-<!-- NAVIGATION -->
-<nav class="nav" id="nav">
-  <div class="nav__container">
-    <a href="#" class="nav__logo"><span class="nav__logo-icon">🟠</span>CohusDex</a>
-    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    <ul class="nav__menu" id="navMenu">
-      <li><a href="#faidaza">Faidaza</a></li>
-      <li><a href="#products">Products</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <a href="#download" class="btn btn--primary nav__cta">Pata Faidaza</a>
-  </div>
-</nav>
-
-<!-- HERO -->
-<header class="hero" id="hero">
-  <div class="hero__container">
-    <div class="hero__badge reveal"><span class="hero__badge-dot"></span> Migori, Kenya · Founded 2026</div>
-    <h1 class="hero__title reveal">Economic Intelligence<br><span class="text-accent">for Africa's Informal Economy</span></h1>
-    <p class="hero__subtitle reveal">500 million informal workers. Zero CFOs. We give every mama mboga, boda-boda rider, fundi, mvuvi, and mkulima the financial intelligence they deserve.</p>
-    <div class="hero__cta reveal">
-      <div class="hero__cta-row">
-        <a href="#download" class="btn btn--primary btn--large">📥 Pata Faidaza — Bure</a>
-        <a href="#products" class="btn btn--outline btn--large">For Institutions →</a>
+  <!-- ====== NAVIGATION (glass morphism) ====== -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__container">
+      <a href="#" class="nav__logo" aria-label="CohusDex home">
+        <span class="nav__logo-dot" aria-hidden="true"></span>
+        CohusDex
+      </a>
+      <div class="nav__right">
+        <ul class="nav__links" role="menubar">
+          <li role="none"><a href="#faidaza" role="menuitem">Faidaza</a></li>
+          <li role="none"><a href="#products" role="menuitem">Products</a></li>
+          <li role="none"><a href="#about" role="menuitem">About</a></li>
+          <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+          <li role="none"><a href="#download" class="nav__cta" role="menuitem">Pata Faidaza</a></li>
+        </ul>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-      <span class="hero__cta-sub">Android 8+ · KES 3,000 phone · 100% Offline · Kiswahili</span>
     </div>
-  </div>
-</header>
-
-<!-- TRUST BAR -->
-<section class="trust"><div class="container"><div class="trust__items">
-  <div class="trust__item"><span class="trust__item-icon">🎤</span> Voice-first</div>
-  <div class="trust__item"><span class="trust__item-icon">📶</span> <strong>100% Offline</strong></div>
-  <div class="trust__item"><span class="trust__item-icon">🆓</span> Free — KES 0</div>
-  <div class="trust__item"><span class="trust__item-icon">🌍</span> <strong>Kiswahili · Luo · Kikuyu</strong></div>
-</div></div></section>
-
-<!-- TWO PRODUCTS -->
-<section class="section split" id="faidaza"><div class="container">
-  <h2 class="section__title reveal">What We Build</h2>
-  <p class="section__subtitle reveal">Two products. One mission. Make every informal worker visible to the economy.</p>
-  <div class="split__grid">
-    <div class="split-card split-card--faidaza reveal">
-      <span class="split-card__badge split-card__badge--b2c">For Workers</span>
-      <div class="split-card__icon">🎤</div>
-      <h3 class="split-card__title">Faidaza</h3>
-      <p class="split-card__desc">Voice-first AI CFO for every informal worker. Speak in Kiswahili. Know your daily profit. Get business advice. All offline. All free. On your KES 3,000 phone.</p>
-      <a href="#download" class="btn btn--primary">Pata Faidaza →</a>
-    </div>
-    <div class="split-card split-card--cohusdex reveal">
-      <span class="split-card__badge split-card__badge--b2b">For Institutions</span>
-      <div class="split-card__icon">🧮</div>
-      <h3 class="split-card__title">CohusDex Core</h3>
-      <p class="split-card__desc">Economic intelligence platform. Turn informal economy data into credit scores for MFIs, market insights for FMCGs, economic maps for governments, and risk profiles for insurers.</p>
-      <a href="#products" class="btn btn--green">Explore Products →</a>
-    </div>
-  </div>
-</div></section>
-
-<!-- HOW IT WORKS -->
-<section class="section how" id="how"><div class="container">
-  <h2 class="section__title reveal">Jinsi Faidaza Inavyofanya Kazi</h2>
-  <p class="section__subtitle reveal">Hatua tatu tu. Sauti yako inatosha.</p>
-  <div class="how__steps">
-    <div class="how__step reveal"><div class="how__step-num">1</div><div class="how__step-icon">🗣️</div><h3>Sema</h3><p>Eleza Faidaza mapato na matumizi yako kwa sauti — Kiswahili, Luo, Kikuyu.</p></div>
-    <div class="how__step reveal"><div class="how__step-num">2</div><div class="how__step-icon">🧮</div><h3>Inahesabu</h3><p>Faida, mwenendo, na hesabu zote — kiotomatiki, offline.</p></div>
-    <div class="how__step reveal"><div class="how__step-num">3</div><div class="how__step-icon">💡</div><h3>Inashauri</h3><p>Ushauri wa biashara kutoka kwa AI — kukusaidia kupanga na kukua.</p></div>
-  </div>
-</div></section>
-
-<!-- DATA GAP -->
-<section class="section datagap" id="datagap"><div class="container">
-  <h2 class="section__title reveal">What M-Pesa Sees vs What <span class="text-accent">Faidaza</span> Knows</h2>
-  <p class="section__subtitle reveal">M-Pesa moves money. Faidaza understands it.</p>
-  <div class="datagap__split">
-    <div class="datagap__side datagap__side--mpesa reveal">
-      <div class="datagap__side-label datagap__side-label--mpesa">📱 M-Pesa Statement</div>
-      <ul>
-        <li>KES 300 left your phone</li>
-        <li>KES 200 entered your phone</li>
-        <li>Net: −KES 100</li>
-        <li>Looks like a loss</li>
-        <li>No product detail</li>
-        <li>No profit calculation</li>
-        <li>No business insight</li>
-      </ul>
-    </div>
-    <div class="datagap__side datagap__side--faidaza reveal">
-      <div class="datagap__side-label datagap__side-label--faidaza">🧮 Faidaza Record</div>
-      <ul>
-        <li>Bought 5kg tomatoes at KES 60/kg</li>
-        <li>Sold 3kg at KES 100/kg</li>
-        <li>Revenue: KES 300 · Cost: KES 180</li>
-        <li><strong>Profit: KES 120</strong></li>
-        <li>2kg inventory remaining (worth KES 120)</li>
-        <li>Best product this week: tomatoes</li>
-        <li>Tomorrow forecast: sell 4kg</li>
-      </ul>
-    </div>
-  </div>
-</div></section>
-
-<!-- WHO IT'S FOR -->
-<section class="section workers"><div class="container">
-  <h2 class="section__title reveal">Who Faidaza Is For</h2>
-  <p class="section__subtitle reveal">Kila mfanyakazi wa kujiajiri. Kila sekta. Kila soko.</p>
-  <div class="workers__grid">
-    <div class="worker-card reveal"><span class="worker-card__icon">🥬</span><div><div class="worker-card__name">Mama Mboga</div><div class="worker-card__desc">Vegetable Seller</div></div></div>
-    <div class="worker-card reveal"><span class="worker-card__icon">🏍️</span><div><div class="worker-card__name">Boda-Boda</div><div class="worker-card__desc">Motorcycle Rider</div></div></div>
-    <div class="worker-card reveal"><span class="worker-card__icon">🔧</span><div><div class="worker-card__name">Fundi</div><div class="worker-card__desc">Mechanic / Artisan</div></div></div>
-    <div class="worker-card reveal"><span class="worker-card__icon">🐟</span><div><div class="worker-card__name">Mvuvi</div><div class="worker-card__desc">Fisherman</div></div></div>
-    <div class="worker-card reveal"><span class="worker-card__icon">🌽</span><div><div class="worker-card__name">Mkulima</div><div class="worker-card__desc">Small-Scale Farmer</div></div></div>
-    <div class="worker-card reveal"><span class="worker-card__icon">🍲</span><div><div class="worker-card__name">Mama Lishe</div><div class="worker-card__desc">Food Vendor</div></div></div>
-    <div class="worker-card reveal"><span class="worker-card__icon">🧹</span><div><div class="worker-card__name">Mama Fua</div><div class="worker-card__desc">Laundry Worker</div></div></div>
-    <div class="worker-card reveal"><span class="worker-card__icon">💈</span><div><div class="worker-card__name">Kinyozi</div><div class="worker-card__desc">Barber / Hairdresser</div></div></div>
-    <div class="worker-card reveal"><span class="worker-card__icon">🏗️</span><div><div class="worker-card__name">Mjenzi</div><div class="worker-card__desc">Construction Worker</div></div></div>
-    <div class="worker-card reveal"><span class="worker-card__icon">🚛</span><div><div class="worker-card__name">Dereva</div><div class="worker-card__desc">Truck / Matatu Driver</div></div></div>
-    <div class="worker-card reveal"><span class="worker-card__icon">👗</span><div><div class="worker-card__name">Mitumba</div><div class="worker-card__desc">Secondhand Clothes</div></div></div>
-    <div class="worker-card reveal"><span class="worker-card__icon">📱</span><div><div class="worker-card__name">M-Pesa Agent</div><div class="worker-card__desc">Mobile Money Agent</div></div></div>
-  </div>
-</div></section>
-
-<!-- B2B PRODUCTS -->
-<section class="section b2b" id="products"><div class="container">
-  <h2 class="section__title reveal">CohusDex Core — <span class="text-green">Intelligence for Institutions</span></h2>
-  <p class="section__subtitle reveal">Same data. Five lenses. Five products. Zero cost for workers.</p>
-  <div class="b2b__grid">
-    <div class="b2b-card reveal">
-      <span class="b2b-card__icon">📊</span>
-      <span class="b2b-card__tag b2b-card__tag--mfi">For Microfinance</span>
-      <h3>CohusDex Score</h3>
-      <p>Data-driven credit scoring for MFIs. Replace subjective 30-minute field visits with 6 months of verified transaction data. Reduce default rates by 15-20%.</p>
-    </div>
-    <div class="b2b-card reveal">
-      <span class="b2b-card__icon">📈</span>
-      <span class="b2b-card__tag b2b-card__tag--fmcg">For FMCGs</span>
-      <h3>CohusDex Pulse</h3>
-      <p>Real-time market intelligence from Africa's informal economy. Pricing trends, demand forecasting, distribution coverage, competitive positioning — at market level.</p>
-    </div>
-    <div class="b2b-card reveal">
-      <span class="b2b-card__icon">🗺️</span>
-      <span class="b2b-card__tag b2b-card__tag--govt">For Government</span>
-      <h3>CohusDex Atlas</h3>
-      <p>The first real-time map of the informal economy. GDP estimates, inflation measurement, employment statistics — from the ground up, not from periodic surveys.</p>
-    </div>
-    <div class="b2b-card reveal">
-      <span class="b2b-card__icon">🛡️</span>
-      <span class="b2b-card__tag b2b-card__tag--ins">For Insurance</span>
-      <h3>CohusDex Data</h3>
-      <p>Risk profiles for the uninsured. Crop insurance for farmers. Health insurance for traders. Asset insurance for riders — all based on real income data, finally quantifiable.</p>
-    </div>
-  </div>
-</div></section>
-
-<!-- TESTIMONIAL -->
-<section class="section testimonial"><div class="container">
-  <div class="testimonial__card reveal">
-    <p class="testimonial__quote">"Kwa miaka ishirini sikuwahi kujua faida yangu ya kila siku. Sasa najua."</p>
-    <div class="testimonial__author">
-      <div class="testimonial__avatar">A</div>
-      <div><div class="testimonial__name">Mama Aoko</div><div class="testimonial__role">Mama Mboga, Migori Market</div></div>
-    </div>
-  </div>
-</div></section>
-
-<!-- COUNTER -->
-<section class="counter-section"><div class="container">
-  <div class="counter-section__content reveal">
-    <div class="counter-section__number" id="workerCount">0</div>
-    <p class="counter-section__label">Wafanyakazi wanatumia Faidaza</p>
-  </div>
-</div></section>
-
-<!-- DOWNLOAD -->
-<section class="section download" id="download"><div class="container">
-  <div class="download__content reveal">
-    <h2 class="section__title">Pata Faidaza Sasa</h2>
-    <p class="section__subtitle">Bure. Offline. Lugha yako. Siku zote.</p>
-    <a href="https://github.com/Valentinus295/cohusdex-releases/releases/download/v0.1.0/faidaza.apk" class="btn btn--primary btn--large" id="downloadBtn">📥 Pakua Faidaza — Bure</a>
-    <div class="download__badges">
-      <span class="download__badge">📱 Android 8+</span>
-      <span class="download__badge">💾 ~30MB</span>
-      <span class="download__badge">📶 100% Offline</span>
-      <span class="download__badge">🆓 KES 0</span>
-      <span class="download__badge">🇰🇪 Kiswahili</span>
-    </div>
-    <p class="download__meta">v0.2.0-alpha · Inafanya kazi OFFLINE baada ya kupakua</p>
-  </div>
-</div></section>
-
-<!-- ABOUT -->
-<section class="section about" id="about"><div class="container">
-  <h2 class="section__title reveal">Who We Are</h2>
-  <div class="about__content reveal">
-    <p class="about__text">CohusDex was founded by <strong>Valentine Owuor</strong>, an Economics &amp; Statistics student at Masinde Muliro University of Science and Technology in Kenya. His mother is a vegetable seller in Migori Market. In twenty years, nobody ever gave her a tool to know her daily profit.</p>
-    <blockquote class="about__quote">"My mother sells vegetables every day. She is one of the hardest-working people I know. But in twenty years, she has never tracked one transaction. She doesn't know her profit. Not because she's lazy. Because nobody ever built a tool for her."</blockquote>
-    <p class="about__text">Valentine is building CohusDex to change that — for his mother, and for 500 million informal workers across Africa who earn a living every day but don't know the numbers behind their livelihood.</p>
-    <div class="about__timeline">
-      <div class="about__tl-item"><span class="about__tl-year">2022</span><span class="about__tl-dot"></span><span class="about__tl-text">Enrolled BSc Economics &amp; Statistics — 44 units across 4 years</span></div>
-      <div class="about__tl-item"><span class="about__tl-year">2024</span><span class="about__tl-dot"></span><span class="about__tl-text">Started building CohusDex — embedding every formula into code</span></div>
-      <div class="about__tl-item"><span class="about__tl-year">2025</span><span class="about__tl-dot"></span><span class="about__tl-text">KALRO Research Attachment · Demulla Microfinance Internship</span></div>
-      <div class="about__tl-item"><span class="about__tl-year">2026</span><span class="about__tl-dot"></span><span class="about__tl-text">Graduating December · Faidaza v0.2.0 · Co-founder: CohusClaw 🧮</span></div>
-    </div>
-  </div>
-</div></section>
-
-<!-- FAQ -->
-<section class="section faq"><div class="container">
-  <h2 class="section__title reveal">Maswali Yanayoulizwa Mara kwa Mara</h2>
-  <div class="faq__list">
-    <details class="faq__item reveal"><summary>Faidaza ni bure?</summary><p>Ndiyo. Bure kabisa. Siku zote. Hakuna usajili, matangazo, wala malipo ya kufichwa. Tunalipwa na makampuni yanayotaka data ya soko — sio na wafanyakazi.</p></details>
-    <details class="faq__item reveal"><summary>Inafanya kazi bila internet?</summary><p>Ndiyo. AI yote inafanya kazi kwenye simu yako. Hakuna data inayotoka nje bila ruhusa yako.</p></details>
-    <details class="faq__item reveal"><summary>Nani anaweza kutumia Faidaza?</summary><p>Kila mfanyakazi wa kujiajiri. Mama mboga, boda-boda, fundi, mvuvi, mkulima, mama lishe, mama fua, kinyozi, mjenzi, dereva, mitumba, M-Pesa agent, na wengine 36+. Sekta 8 tayari. Zaidi inakuja kadri tunavyosonga Afrika nzima.</p></details>
-    <details class="faq__item reveal"><summary>Lugha gani?</summary><p>Kiswahili, Luo, na Kikuyu sasa. Tunaongeza lugha zaidi kila mwezi — Luganda, Kinyarwanda, Amharic, Hausa, na 20+ zaidi kadri tunavyosonga Afrika nzima.</p></details>
-    <details class="faq__item reveal"><summary>Mnatofautiana vipi na M-Pesa?</summary><p>M-Pesa inasonga pesa. Faidaza inaelewa pesa. M-Pesa inajua KES 300 ilitoka. Faidaza inajua ulinunua nyanya kilo 5 kwa KES 60, ukauza kilo 3 kwa KES 100, faida yako ni KES 120. M-Pesa ni mkoba. Faidaza ni CFO.</p></details>
-    <details class="faq__item reveal"><summary>Nani aliunda CohusDex?</summary><p>Valentine Owuor, mwanafunzi wa Economics &amp; Statistics Masinde Muliro University, Migori, Kenya. Alijenga Faidaza kwa sababu mamake ni mama mboga na aliona hakuna mtu aliyewahi kumpa chombo cha kuelewa hesabu zake — si Kenya, si Afrika, si dunia.</p></details>
-  </div>
-</div></section>
-
-<!-- CONTACT -->
-<section class="section contact" id="contact"><div class="container">
-  <h2 class="section__title reveal">Partner With Us</h2>
-  <p class="section__subtitle reveal">For MFIs, FMCGs, governments, insurers, and investors.</p>
-  <div class="contact__grid reveal">
-    <form class="contact__form" action="https://formspree.io/f/placeholder" method="POST">
-      <input type="text" name="name" placeholder="Jina lako / Your name" required>
-      <input type="email" name="email" placeholder="Barua pepe / Email" required>
-      <select name="type"><option value="">Organization type</option><option>Microfinance (MFI)</option><option>FMCG Company</option><option>Government Agency</option><option>Insurance Company</option><option>Investor</option><option>Other</option></select>
-      <textarea name="message" placeholder="Ujumbe wako / Your message" required></textarea>
-      <button type="submit" class="btn btn--primary">Send Message →</button>
-    </form>
-    <div class="contact__info">
-      <div class="contact__info-item"><span class="contact__info-icon">📧</span><div><div class="contact__info-label">Email</div><div class="contact__info-value">valentineowuor12@gmail.com</div></div></div>
-      <div class="contact__info-item"><span class="contact__info-icon">📞</span><div><div class="contact__info-label">Phone</div><div class="contact__info-value">+254 115965493</div></div></div>
-      <div class="contact__info-item"><span class="contact__info-icon">📍</span><div><div class="contact__info-label">Location</div><div class="contact__info-value">Migori, Kenya</div></div></div>
-      <div class="contact__info-item"><span class="contact__info-icon">🎓</span><div><div class="contact__info-label">University</div><div class="contact__info-value">Masinde Muliro University</div></div></div>
-    </div>
-  </div>
-</div></section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer__brand"><span class="footer__brand-icon">🟠</span><span class="footer__brand-text">CohusDex</span></div>
-    <p class="footer__tagline">Economic Intelligence for Africa's Informal Economy. Kenya → East Africa → Africa.</p>
-    <nav class="footer__links">
+    <div class="nav__mobile" id="navMobile">
       <a href="#faidaza">Faidaza</a>
       <a href="#products">Products</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
-    </nav>
-    <p class="footer__copy">&copy; 2026 CohusDex. Built in Migori, Kenya. For Africa.</p>
-  </div>
-</footer>
+      <a href="#download" class="nav__cta">Pata Faidaza</a>
+    </div>
+  </nav>
 
-<script src="js/main.js"></script>
+  <!-- ====== HERO ====== -->
+  <header class="hero" id="hero">
+    <div class="hero__container">
+      <div class="hero__content">
+        <div class="hero__badge reveal">
+          <span class="hero__badge-dot" aria-hidden="true"></span>
+          Now in Kenya · Expanding Across Africa
+        </div>
+        <h1 class="hero__title reveal">Economic Intelligence<br>for Africa's<br><span class="text-accent">Informal Economy</span></h1>
+        <p class="hero__subtitle reveal">CFO kwa kila mfanyakazi wa kujiajiri barani Afrika. Voice-first. Offline. Free. Built for the 500M+ workers the world forgot to count.</p>
+        <div class="hero__actions reveal">
+          <a href="#download" class="btn btn--primary btn--lg">
+            <span aria-hidden="true">📥</span> Pata Faidaza — Bure
+          </a>
+          <a href="#products" class="btn btn--outline btn--lg">
+            For Institutions <span aria-hidden="true">→</span>
+          </a>
+        </div>
+        <p class="hero__note reveal">Android 8+ · ~30MB · No internet needed after setup</p>
+      </div>
+      <div class="hero__visual reveal" aria-hidden="true">
+        <div class="hero__phone">
+          <div class="hero__phone-inner">
+            <div class="hero__phone-icon">🧮</div>
+            <div class="hero__phone-label">Faidaza</div>
+            <div class="hero__phone-amount">KES 520</div>
+            <div class="hero__phone-sub">Leo — faida yako</div>
+            <div class="hero__phone-waves">
+              <span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__orb hero__orb--3"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====== TRUST BAR ====== -->
+  <section class="trust" aria-label="Key facts">
+    <div class="trust__inner">
+      <div class="trust__item">
+        <span class="trust__item-icon" aria-hidden="true">🎤</span>
+        Voice-first
+      </div>
+      <div class="trust__item">
+        <span class="trust__item-icon" aria-hidden="true">📶</span>
+        100% Offline
+      </div>
+      <div class="trust__item">
+        <span class="trust__item-icon" aria-hidden="true">🆓</span>
+        Free Forever
+      </div>
+      <div class="trust__item">
+        <span class="trust__item-icon" aria-hidden="true">🌍</span>
+        Kiswahili + 20+ Languages
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TWO PRODUCTS ====== -->
+  <section class="section products" id="faidaza" aria-labelledby="products-title">
+    <div class="container">
+      <span class="section__label reveal" style="text-align:center;display:block;">Our Products</span>
+      <h2 class="section__title reveal" id="products-title">Two Products. One Mission.</h2>
+      <p class="section__subtitle reveal">Faidaza gives every worker a CFO. CohusDex Core gives institutions the intelligence they need to serve those workers.</p>
+      <div class="products__grid">
+        <!-- Faidaza B2C -->
+        <article class="product-card product-card--faidaza reveal">
+          <div class="product-card__icon">🧮</div>
+          <span class="product-card__tag">For Workers</span>
+          <h3 class="product-card__title">Faidaza</h3>
+          <p class="product-card__desc">CFO for every informal worker. Voice-first AI that tracks profit, manages inventory, and gives business advice — in Kiswahili, offline, on a KES 3,000 phone.</p>
+          <ul class="product-card__features">
+            <li>Voice input in Kiswahili, Luo, Kikuyu &amp; more</li>
+            <li>100% offline — AI runs on-device</li>
+            <li>Works on 2GB RAM phones</li>
+            <li>Free forever. No ads. No registration.</li>
+          </ul>
+          <a href="#download" class="btn btn--primary product-card__cta">
+            <span aria-hidden="true">📥</span> Download APK — Free
+          </a>
+        </article>
+
+        <!-- CohusDex Core B2B -->
+        <article class="product-card product-card--core reveal">
+          <div class="product-card__icon">📊</div>
+          <span class="product-card__tag">For Institutions</span>
+          <h3 class="product-card__title">CohusDex Core</h3>
+          <p class="product-card__desc">Intelligence products for the institutions that serve Africa's informal economy — microfinance, FMCG, government, and insurance.</p>
+          <ul class="product-card__features">
+            <li>Score — credit intelligence for MFIs</li>
+            <li>Pulse — market intelligence for FMCG</li>
+            <li>Atlas — economic mapping for government</li>
+            <li>Data — risk analytics for insurers</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline product-card__cta">
+            Partner With Us <span aria-hidden="true">→</span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== HOW FAIDAZA WORKS ====== -->
+  <section class="section section--alt how" id="how" aria-labelledby="how-title">
+    <div class="container">
+      <span class="section__label reveal" style="text-align:center;display:block;">How It Works</span>
+      <h2 class="section__title reveal" id="how-title">Hatua Tatu. Sauti Yako Inatosha.</h2>
+      <p class="section__subtitle reveal">Three steps. Your voice is enough. No keyboard. No accounting skills. Just speak.</p>
+      <div class="how__steps">
+        <div class="how__step how__step--connector reveal">
+          <div class="how__step-num" aria-hidden="true">1</div>
+          <span class="how__step-icon" aria-hidden="true">🗣️</span>
+          <h3>Sema <span style="font-weight:400;color:var(--gray-light);font-size:0.85rem;">/ Speak</span></h3>
+          <p>Tell Faidaza your income and expenses by voice — in Kiswahili, Luo, Kikuyu, and 20+ African languages</p>
+          <span class="how__step-sw">"Nimeuza nyanya tatu, mia moja hamsini"</span>
+        </div>
+        <div class="how__step how__step--connector reveal reveal--delay-1">
+          <div class="how__step-num" aria-hidden="true">2</div>
+          <span class="how__step-icon" aria-hidden="true">🧮</span>
+          <h3>Inahesabu <span style="font-weight:400;color:var(--gray-light);font-size:0.85rem;">/ Calculate</span></h3>
+          <p>Profit, inventory, trends — calculated automatically. See your daily, weekly, and monthly performance.</p>
+          <span class="how__step-sw">"Leo umeingiza KES 950. Faida: KES 520."</span>
+        </div>
+        <div class="how__step reveal reveal--delay-2">
+          <div class="how__step-num" aria-hidden="true">3</div>
+          <span class="how__step-icon" aria-hidden="true">💡</span>
+          <h3>Inashauri <span style="font-weight:400;color:var(--gray-light);font-size:0.85rem;">/ Advise</span></h3>
+          <p>AI-powered advice to help you plan, save, and grow your business — like having a CFO in your pocket</p>
+          <span class="how__step-sw">"Umeongezeka 15% kutoka jana. Endelea hivyo!"</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== THE DATA GAP ====== -->
+  <section class="section data-gap" id="data-gap" aria-labelledby="data-gap-title">
+    <div class="container">
+      <span class="section__label reveal" style="text-align:center;display:block;">The Problem</span>
+      <h2 class="section__title reveal" id="data-gap-title">M-Pesa Shows Transactions.<br><span class="text-accent">Faidaza Shows Business.</span></h2>
+      <p class="section__subtitle reveal">500 million informal workers in Africa. Most use mobile money. None of them get useful business data from it. This is the gap we close.</p>
+      <div class="data-gap__grid">
+        <!-- M-Pesa side -->
+        <div class="data-gap__card data-gap__card--mpesa reveal">
+          <span class="data-gap__card-label">⚠️ What M-Pesa Tells You</span>
+          <h4 class="data-gap__card-title">A Transaction Statement</h4>
+          <div class="data-gap__entry">
+            <div class="data-gap__line">
+              <span>Balance brought forward</span>
+              <span>KES 300</span>
+            </div>
+            <div class="data-gap__line">
+              <span>M-Pesa received</span>
+              <span>KES 200</span>
+            </div>
+            <div class="data-gap__line data-gap__line--negative">
+              <span>M-Pesa sent</span>
+              <span>-KES 400</span>
+            </div>
+            <div class="data-gap__line data-gap__line--total data-gap__line--negative">
+              <span>Net</span>
+              <span class="data-gap__big-number data-gap__big-number--bad">-KES 100</span>
+            </div>
+          </div>
+          <p class="data-gap__insight">This tells you nothing about your business. You could be profitable or losing money — M-Pesa can't tell the difference.</p>
+        </div>
+
+        <!-- VS -->
+        <div class="data-gap__vs reveal" aria-hidden="true">VS</div>
+
+        <!-- Faidaza side -->
+        <div class="data-gap__card data-gap__card--faidaza reveal reveal--delay-2">
+          <span class="data-gap__card-label">✅ What Faidaza Tells You</span>
+          <h4 class="data-gap__card-title">A Business Record</h4>
+          <div class="data-gap__entry">
+            <div class="data-gap__line">
+              <span>Bought 5kg tomatoes</span>
+              <span>-KES 300</span>
+            </div>
+            <div class="data-gap__line">
+              <span>Sold 3kg @ KES 100/kg</span>
+              <span>KES 300</span>
+            </div>
+            <div class="data-gap__line">
+              <span>2kg remaining (inventory)</span>
+              <span>KES 200 value</span>
+            </div>
+            <div class="data-gap__line data-gap__line--total data-gap__line--positive">
+              <span>Profit (3kg sold)</span>
+              <span class="data-gap__big-number data-gap__big-number--good">KES 120</span>
+            </div>
+          </div>
+          <p class="data-gap__insight">Now you know: you made KES 120 profit on the 3kg sold, and you still have 2kg worth KES 200 in stock. <strong>This is business intelligence.</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== WHO IT'S FOR ====== -->
+  <section class="section section--alt workers" id="workers" aria-labelledby="workers-title">
+    <div class="container">
+      <span class="section__label reveal" style="text-align:center;display:block;">Who It's For</span>
+      <h2 class="section__title reveal" id="workers-title">Kila Mfanyakazi. Kila Sekta.</h2>
+      <p class="section__subtitle reveal">Built for every type of informal worker in Africa. If you work for yourself, Faidaza works for you.</p>
+      <div class="workers__grid">
+        <div class="worker-card reveal">
+          <span class="worker-card__icon" aria-hidden="true">🥬</span>
+          <div class="worker-card__name">Mama Mboga</div>
+          <div class="worker-card__sub">Vegetable Vendor</div>
+        </div>
+        <div class="worker-card reveal reveal--delay-1">
+          <span class="worker-card__icon" aria-hidden="true">🏍️</span>
+          <div class="worker-card__name">Boda-Boda</div>
+          <div class="worker-card__sub">Motorcycle Taxi</div>
+        </div>
+        <div class="worker-card reveal reveal--delay-2">
+          <span class="worker-card__icon" aria-hidden="true">🔧</span>
+          <div class="worker-card__name">Fundi</div>
+          <div class="worker-card__sub">Technician / Artisan</div>
+        </div>
+        <div class="worker-card reveal reveal--delay-3">
+          <span class="worker-card__icon" aria-hidden="true">🐟</span>
+          <div class="worker-card__name">Mvuvi</div>
+          <div class="worker-card__sub">Fisherman</div>
+        </div>
+        <div class="worker-card reveal">
+          <span class="worker-card__icon" aria-hidden="true">🌽</span>
+          <div class="worker-card__name">Mkulima</div>
+          <div class="worker-card__sub">Farmer</div>
+        </div>
+        <div class="worker-card reveal reveal--delay-1">
+          <span class="worker-card__icon" aria-hidden="true">🍲</span>
+          <div class="worker-card__name">Mama Lishe</div>
+          <div class="worker-card__sub">Food Vendor</div>
+        </div>
+        <div class="worker-card reveal reveal--delay-2">
+          <span class="worker-card__icon" aria-hidden="true">🧹</span>
+          <div class="worker-card__name">Mama Fua</div>
+          <div class="worker-card__sub">Laundry Worker</div>
+        </div>
+        <div class="worker-card reveal reveal--delay-3">
+          <span class="worker-card__icon" aria-hidden="true">💈</span>
+          <div class="worker-card__name">Kinyozi</div>
+          <div class="worker-card__sub">Barber</div>
+        </div>
+        <div class="worker-card reveal">
+          <span class="worker-card__icon" aria-hidden="true">🏗️</span>
+          <div class="worker-card__name">Mjenzi</div>
+          <div class="worker-card__sub">Construction Worker</div>
+        </div>
+        <div class="worker-card reveal reveal--delay-1">
+          <span class="worker-card__icon" aria-hidden="true">🚛</span>
+          <div class="worker-card__name">Dereva</div>
+          <div class="worker-card__sub">Driver</div>
+        </div>
+        <div class="worker-card reveal reveal--delay-2">
+          <span class="worker-card__icon" aria-hidden="true">👗</span>
+          <div class="worker-card__name">Mitumba</div>
+          <div class="worker-card__sub">Second-hand Clothes</div>
+        </div>
+        <div class="worker-card reveal reveal--delay-3">
+          <span class="worker-card__icon" aria-hidden="true">📱</span>
+          <div class="worker-card__name">M-Pesa Agent</div>
+          <div class="worker-card__sub">Mobile Money Agent</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== B2B PRODUCTS ====== -->
+  <section class="section b2b" id="products" aria-labelledby="b2b-title">
+    <div class="container">
+      <span class="section__label reveal" style="text-align:center;display:block;">For Institutions</span>
+      <h2 class="section__title reveal" id="b2b-title">Intelligence Products for<br>Africa's Institutions</h2>
+      <p class="section__subtitle reveal">Data from the informal economy, transformed into actionable intelligence for the organizations that serve it.</p>
+      <div class="b2b__grid">
+        <!-- Score -->
+        <article class="b2b-card b2b-card--score reveal">
+          <div class="b2b-card__icon" aria-hidden="true">📊</div>
+          <span class="b2b-card__tag">For Microfinance</span>
+          <h3 class="b2b-card__title">Score</h3>
+          <p class="b2b-card__desc">Credit intelligence powered by real transaction data. Better than traditional credit scores for informal workers.</p>
+        </article>
+        <!-- Pulse -->
+        <article class="b2b-card b2b-card--pulse reveal reveal--delay-1">
+          <div class="b2b-card__icon" aria-hidden="true">📈</div>
+          <span class="b2b-card__tag">For FMCG Companies</span>
+          <h3 class="b2b-card__title">Pulse</h3>
+          <p class="b2b-card__desc">Market intelligence from the informal sector. Know what's selling, where, and at what price — in real time.</p>
+        </article>
+        <!-- Atlas -->
+        <article class="b2b-card b2b-card--atlas reveal reveal--delay-2">
+          <div class="b2b-card__icon" aria-hidden="true">🗺️</div>
+          <span class="b2b-card__tag">For Government</span>
+          <h3 class="b2b-card__title">Atlas</h3>
+          <p class="b2b-card__desc">Economic mapping of informal activity. Finally, data to inform policy for the sector that employs 80% of Africans.</p>
+        </article>
+        <!-- Data -->
+        <article class="b2b-card b2b-card--data reveal reveal--delay-3">
+          <div class="b2b-card__icon" aria-hidden="true">🛡️</div>
+          <span class="b2b-card__tag">For Insurers</span>
+          <h3 class="b2b-card__title">Data</h3>
+          <p class="b2b-card__desc">Risk analytics for Africa's uninsured. Price micro-insurance products with real-world data, not assumptions.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOUNDER STORY ====== -->
+  <section class="section section--alt founder" id="about" aria-labelledby="founder-title">
+    <div class="container">
+      <span class="section__label reveal" style="text-align:center;display:block;">About</span>
+      <h2 class="section__title reveal" id="founder-title">Built by an Economist.<br><span class="text-accent">Inspired by a Mother.</span></h2>
+      <div class="founder__grid">
+        <div class="reveal">
+          <div class="founder__quote">
+            <p class="founder__quote-text">"My mother has been a vegetable vendor in Migori market for over 20 years. In all that time, nobody ever gave her a tool to understand her numbers. Not Kenya. Not Africa. Not the world. So I decided to build one."</p>
+            <p class="founder__quote-attr">— Valentine Owuor, Founder &amp; CEO</p>
+          </div>
+        </div>
+        <div class="founder__story reveal">
+          <h3>The Journey</h3>
+          <p>Valentine Owuor is an economist and statistician from Migori County, Kenya. While studying 44 units of Economics &amp; Statistics at Masinde Muliro University of Science and Technology, he realized that nobody was building financial tools for the people who need them most — Africa's 500 million informal workers.</p>
+          <div class="timeline">
+            <div class="timeline__item">
+              <div class="timeline__year">2022</div>
+              <div class="timeline__event">Enrolled at Masinde Muliro University — Economics &amp; Statistics</div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__year">2024</div>
+              <div class="timeline__event">Started building Faidaza — voice-first CFO for his mother and millions like her</div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__year">2025</div>
+              <div class="timeline__event">Completed KALRO attachment (Non-Ruminant Research) + Demulla Microfinance field research</div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__year">2026</div>
+              <div class="timeline__event">Graduating December · Faidaza v0.2.0 shipping · Building CohusDex for Africa</div>
+            </div>
+          </div>
+          <div class="university-badge">
+            <span class="university-badge__icon" aria-hidden="true">🎓</span>
+            Built with 44 units of Economics &amp; Statistics from Masinde Muliro University
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TESTIMONIAL ====== -->
+  <section class="section testimonial" id="testimonial" aria-labelledby="testimonial-label">
+    <div class="container">
+      <div class="testimonial__card reveal">
+        <p class="testimonial__text" id="testimonial-label">"Kwa miaka ishirini sikuwahi kujua faida yangu ya kila siku. Sasa najua."</p>
+        <p class="testimonial__author">Mama Aoko</p>
+        <p class="testimonial__role">Mama Mboga, Migori Market</p>
+        <p class="testimonial__translation">"For twenty years I never knew my daily profit. Now I do."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== WORKER COUNTER ====== -->
+  <section class="counter" aria-labelledby="counter-title">
+    <div class="container">
+      <div class="counter__content reveal">
+        <div class="counter__number" id="workerCount" aria-live="polite">0</div>
+        <p class="counter__label" id="counter-title">Wafanyakazi wanatumia Faidaza</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== DOWNLOAD ====== -->
+  <section class="section download" id="download" aria-labelledby="download-title">
+    <div class="container">
+      <div class="download__content reveal">
+        <span class="section__label" style="color:rgba(255,255,255,0.7);">Get Started</span>
+        <h2 class="section__title" id="download-title">Pata Faidaza Sasa</h2>
+        <p class="section__subtitle">Download the APK. Install. Start tracking your profit in under 2 minutes. Bure kabisa.</p>
+
+        <div class="download__cta">
+          <a href="https://github.com/Valentinus295/cohusdex-releases/releases/download/v0.1.0/faidaza.apk"
+             class="btn btn--white btn--lg" id="downloadBtn" download="faidaza.apk">
+            <span id="dlIcon" aria-hidden="true">📥</span>
+            <span id="dlText">Pakua APK — Bure</span>
+          </a>
+        </div>
+
+        <div class="download__badges">
+          <span class="download__badge">🤖 Android 8+</span>
+          <span class="download__badge">💾 ~30MB</span>
+          <span class="download__badge">📶 100% Offline</span>
+          <span class="download__badge">🆓 KES 0</span>
+          <span class="download__badge">🗣️ Kiswahili</span>
+        </div>
+
+        <p class="download__size-note">APK: 30MB · AI models download automatically after install (~370MB). Works completely offline after setup.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FAQ ====== -->
+  <section class="section faq" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <span class="section__label reveal" style="text-align:center;display:block;">FAQ</span>
+      <h2 class="section__title reveal" id="faq-title">Maswali Yanayoulizwa Mara kwa Mara</h2>
+      <div class="faq__list">
+        <details class="faq__item reveal">
+          <summary>Faidaza ni bure kweli?</summary>
+          <p>Ndiyo. Bure kabisa. Siku zote. Hakuna usajili, hakuna matangazo, hakuna malipo ya kufichwa. Faidaza itakuwa bure milele kwa wafanyakazi wa kujiajiri. Mapato ya CohusDex yanatoka kwa taasisi — microfinance, FMCG, serikali, na bima — ambao wananunua data na intelligence (kwa idhini ya mtumiaji). Sio kutoka kwa mama mboga.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>Inafanya kazi bila internet?</summary>
+          <p>Ndiyo. AI yote — speech-to-text, language model, na business analytics — inafanya kazi moja kwa moja kwenye simu yako. Hakuna data inayotoka nje bila ruhusa yako. Utahitaji internet mara ya kwanza tu kupakua modeli za AI (~370MB). Baada ya hapo, Faidaza inafanya kazi offline.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>Lugha gani zinapatikana?</summary>
+          <p>Kiswahili, Luo, na Kikuyu sasa. Tunaongeza: Luganda, Kinyarwanda, Kamba, Kalenjin, Luhya, Dholuo, na lugha 20+ zaidi kadri tunavyosonga Afrika nzima. Kila mwezi lugha mpya inaongezwa.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>Inahitaji simu gani?</summary>
+          <p>Android 8.0 au zaidi, RAM 2GB. Inafanya kazi kwenye simu za KES 3,000. Faidaza APK (~30MB) ndio inapakuliwa kwanza; modeli za AI (~370MB) zinapakuliwa mara ya kwanza unapofungua app. Baada ya hapo, inafanya kazi offline kabisa. Nafasi yote inayohitajika: ~400MB.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>Data yangu iko salama?</summary>
+          <p>Ndiyo kabisa. Database yako imesimbwa kwa SQLCipher (AES-256). Data yako haiondoki simu yako bila ruhusa yako. Sync ni optional, opt-in, na data inayotumwa inafanywa anonymous — hatuwezi kukutambulisha wewe binafsi. Faragha yako ni msingi wa biashara yetu.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>Nani ameunda Faidaza na CohusDex?</summary>
+          <p>Valentine Owuor, mwanauchumi na mwanatakwimu kutoka Migori, Kenya. Alisoma Economics &amp; Statistics katika Masinde Muliro University of Science and Technology. Alijenga Faidaza kwa sababu mamake ni mama mboga na aliona hakuna mtu aliyewahi kumpa chombo cha kuelewa hesabu zake. Sasa anajenga CohusDex kwa ajili ya Afrika nzima — kuanzia Kenya, tukienea Afrika Mashariki, hadi Afrika nzima.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section class="section section--alt contact" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <span class="section__label reveal" style="text-align:center;display:block;">Get In Touch</span>
+      <h2 class="section__title reveal" id="contact-title">Partner With Us</h2>
+      <p class="section__subtitle reveal">Whether you're an MFI, an FMCG company, a government agency, an insurer, or a researcher — we'd love to talk.</p>
+      <div class="contact__grid">
+        <form class="contact__form reveal" action="https://formspree.io/f/cohusdex@gmail.com" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your full name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@company.com">
+          </div>
+          <div class="form-group">
+            <label for="org-type">Organization Type</label>
+            <select id="org-type" name="org-type">
+              <option value="">Select type…</option>
+              <option value="mfi">Microfinance Institution</option>
+              <option value="fmcg">FMCG Company</option>
+              <option value="government">Government Agency</option>
+              <option value="insurance">Insurance Company</option>
+              <option value="research">Research / Academic</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Tell us about your needs…"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send Message <span aria-hidden="true">→</span></button>
+        </form>
+
+        <div class="contact__info reveal">
+          <div class="contact__info-item">
+            <div class="contact__info-icon" aria-hidden="true">📧</div>
+            <div>
+              <div class="contact__info-label">Email</div>
+              <div class="contact__info-value">cohusdex@gmail.com</div>
+            </div>
+          </div>
+          <div class="contact__info-item">
+            <div class="contact__info-icon" aria-hidden="true">📱</div>
+            <div>
+              <div class="contact__info-label">Phone</div>
+              <div class="contact__info-value">+254 115 965 493</div>
+            </div>
+          </div>
+          <div class="contact__info-item">
+            <div class="contact__info-icon" aria-hidden="true">📍</div>
+            <div>
+              <div class="contact__info-label">Location</div>
+              <div class="contact__info-value">Migori County, Kenya</div>
+            </div>
+          </div>
+          <div class="contact__info-item">
+            <div class="contact__info-icon" aria-hidden="true">🎓</div>
+            <div>
+              <div class="contact__info-label">University</div>
+              <div class="contact__info-value">Masinde Muliro University of Science &amp; Technology</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__brand-dot" aria-hidden="true"></span>
+        <span class="footer__brand-name">CohusDex</span>
+      </div>
+      <p class="footer__tagline">Economic intelligence for Africa's informal economy. CFO kwa kila mfanyakazi wa kujiajiri barani Afrika.</p>
+      <nav class="footer__links" aria-label="Footer links">
+        <a href="#faidaza">Faidaza</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#download">Download</a>
+        <a href="https://github.com/Valentinus295" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:cohusdex@gmail.com">Email</a>
+      </nav>
+      <p class="footer__copy">&copy; 2026 CohusDex. All rights reserved.</p>
+      <p class="footer__location">Built in Migori, Kenya. For Africa. 🧮</p>
+    </div>
+  </footer>
+
+  <!-- ====== SCRIPTS ====== -->
+  <script src="js/main.js"></script>
+
+  <!-- ====== DOWNLOAD BUTTON LOGIC ====== -->
+  <script>
+  (function() {
+    var btn = document.getElementById('downloadBtn');
+    var icon = document.getElementById('dlIcon');
+    var text = document.getElementById('dlText');
+    if (!btn) return;
+
+    btn.addEventListener('click', function(e) {
+      if (btn.classList.contains('downloading')) {
+        e.preventDefault();
+        return;
+      }
+      e.preventDefault();
+      btn.classList.add('downloading');
+      icon.textContent = '⏳';
+      text.textContent = 'Inapakua...';
+      btn.style.pointerEvents = 'none';
+      btn.style.opacity = '0.8';
+
+      var a = document.createElement('a');
+      a.href = btn.getAttribute('href');
+      a.download = 'faidaza.apk';
+      a.style.display = 'none';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+
+      setTimeout(function() {
+        icon.textContent = '✅';
+        text.textContent = 'Imepakuliwa!';
+        btn.style.opacity = '1';
+        setTimeout(function() {
+          icon.textContent = '📥';
+          text.textContent = 'Pakua APK — Bure';
+          btn.classList.remove('downloading');
+          btn.style.pointerEvents = '';
+        }, 3000);
+      }, 1500);
+    });
+  })();
+  </script>
 </body>
 </html>
