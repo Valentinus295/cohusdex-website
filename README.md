@@ -4,11 +4,17 @@
 
 🌐 **Live Site:** [https://valentinus295.github.io/cohusdex-website/](https://valentinus295.github.io/cohusdex-website/)
 
-## 📱 Download Faidaz
+## 📱 Download Faidaz v0.5.1
 
 **One-click download. Auto-install. Start using immediately.**
 
-[⬇️ Download Faidaz APK](https://valentinus295.github.io/cohusdex-website/faidaza.apk)
+[⬇️ Download Faidaz APK](https://github.com/Valentinus295/faidaza/releases/download/v0.5.1/faidaza-full.apk)
+
+**What's New in v0.5.1:**
+- Qwen3 0.6B LLM with thinking mode (119 languages)
+- Optimized for 2GB RAM devices
+- Security hardening with SQLCipher
+- Full offline operation
 
 - 🎤 Voice-first — speak in Kiswahili, Luo, Kikuyu, Luhya, Kamba, Kalenjin
 - 📶 100% offline — no internet required after download
@@ -31,7 +37,7 @@ cohusdex-website/
 ├── for-organizations.html  # B2B partnerships
 ├── about.html              # About CohusDex
 ├── contact.html            # Contact
-├── faidaza.apk             # Faidaz Android app
+├── download.html           # APK download page (links to GitHub Releases)
 ├── css/style.css           # Design system
 ├── js/main.js              # Core JS
 ├── manifest.json           # PWA manifest
