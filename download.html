@@ -1,5 +1,134 @@
 <!DOCTYPE html>
 <html lang="sw">
-<head><meta charset="UTF-8"><meta http-equiv="refresh" content="0;url=/#download"><title>CohusDex</title></head>
-<body><a href="/#download">Continue to CohusDex</a></body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Pakua Faidaz — Bure | CohusDex</title>
+  <meta name="description" content="Pakua Faidaz — CFO wako wa AI. Bure kabisa. Sauti yako ndio amri yako.">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .download-hero { text-align:center; padding:80px 20px 40px; }
+    .download-btn { 
+      display:inline-block; background:var(--orange); color:var(--white); 
+      padding:20px 48px; border-radius:12px; font-size:1.4rem; font-weight:800;
+      text-decoration:none; margin:24px 0; transition:transform 0.2s;
+      box-shadow:0 4px 20px rgba(232,114,42,0.4);
+    }
+    .download-btn:hover { transform:scale(1.05); }
+    .download-btn:active { transform:scale(0.98); }
+    .download-info { max-width:500px; margin:0 auto; text-align:left; }
+    .download-info li { margin:12px 0; font-size:1.1rem; }
+    .download-info li span { font-size:1.4rem; margin-right:8px; }
+    .download-size { color:var(--gray); font-size:0.9rem; margin-top:8px; }
+    .steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:24px; margin:40px 0; }
+    .step { text-align:center; padding:24px; }
+    .step-num { font-size:2rem; font-weight:900; color:var(--orange); }
+    .step h3 { margin:12px 0 8px; }
+    .trust-badges { display:flex; flex-wrap:wrap; justify-content:center; gap:16px; margin:32px 0; }
+    .trust-badge { background:var(--white); padding:12px 20px; border-radius:8px; font-weight:600; }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__container">
+    <a href="./" class="nav__logo"><span class="nav__logo-icon">🟠</span>CohusDex</a>
+    <ul class="nav__menu">
+      <li><a href="./">Nyumbani</a></li>
+      <li><a href="products/faidaz.html">Faidaz</a></li>
+      <li><a href="about.html">Kuhusu</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="download-hero">
+  <h1>📱 Pakua <span class="text-accent">Faidaz</span></h1>
+  <p style="font-size:1.2rem;max-width:500px;margin:0 auto 16px">
+    CFO wako wa AI — bure kabisa. Sauti yako ndio amri yako.
+  </p>
+  
+  <a href="./faidaza.apk" class="download-btn" id="downloadBtn" download>
+    ⬇️ Pakua Faidaz — Bure
+  </a>
+  
+  <p class="download-size">~355 MB · Inajipanga yenyewe · Hakuna internet baada ya kupakua</p>
+
+  <div class="trust-badges">
+    <div class="trust-badge">🎤 Sauti</div>
+    <div class="trust-badge">📶 Offline</div>
+    <div class="trust-badge">🆓 Bure</div>
+    <div class="trust-badge">🔒 Siri</div>
+    <div class="trust-badge">🌍 Lugha 7</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section__title">Jinsi Inavyofanya Kazi</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Pakua</h3>
+        <p>Bonyeza kitufe hapo juu. APK itapakuliwa moja kwa moja.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Sakinisha</h3>
+        <p>Fungua faili iliyopakuliwa. Bonyeza 'Sakinisha'. Faidaz inajipanga yenyewe.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Anza</h3>
+        <p>Faidaz itakuuliza jina lako, biashara yako, na kuanza kukusaidia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section__title">Yote Iko Ndani</h3>
+    <div class="download-info">
+      <ul>
+        <li><span>🎤</span> Sauti — Whisper STT + Piper TTS (Kiswahili, Luo, Kikuyu, Luhya, Kamba, Kalenjin)</li>
+        <li><span>🧠</span> Akili — SmolLM/Gemma ya kukusaidia biashara yako</li>
+        <li><span>📊</span> BFS — Alama ya mkopo kwa wafanyakazi wasio rasmi</li>
+        <li><span>💰</span> Faida — Kuhesabu faida, hasara, na mwenendo</li>
+        <li><span>🔒</span> SQLCipher — Data yako imefungwa kwa ufunguo</li>
+        <li><span>📱</span> Room DB — Hifadhi ya data ya ndani</li>
+        <li><span>🤝</span> Wakala 13 — Kila kazi ina wakala wake</li>
+        <li><span>🌍</span> Sekta 16 — Biashara, Usafiri, Kilimo, Huduma, Chakula, Ujenzi, Fedha, Uvuvi, Vipodozi, Uchimbaji, Utalii, Taka...</li>
+      </ul>
+      <p style="margin-top:24px;font-weight:600">Hakuna kupakua ziada. Hakuna internet inayohitajika. Bonyeza moja — tumia mara moja.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--green);color:var(--white)">
+  <div class="container" style="text-align:center">
+    <h2>Biashara Yako Inastahili CFO</h2>
+    <p style="margin-bottom:24px">500 milioni wafanyakazi wasio rasmi. Sifuri zana za biashara. Hadi sasa.</p>
+    <a href="./faidaza.apk" class="download-btn" style="background:var(--white);color:var(--green)" download>
+      ⬇️ Pakua Faidaz Sasa
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 CohusDex · Migori, Kenya · <a href="https://github.com/Valentinus295/cohusdex-website" style="color:var(--orange)">GitHub</a></p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  // Track download clicks
+  document.querySelectorAll('[download]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (typeof gtag !== 'undefined') gtag('event', 'download', { 'event_category': 'APK' });
+    });
+  });
+</script>
+</body>
 </html>
